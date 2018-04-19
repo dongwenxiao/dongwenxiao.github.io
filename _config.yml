@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-keywords:
+title: 大标题
+subtitle: 小标题
+description: 描述
+keywords: 关键字
 author: John Doe
-language:
-timezone:
+language: zh-CN
+timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -73,9 +73,18 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: codemonkey
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/dongwenxiao/dongwenxiao.github.io.git
+  branch: website
+  message: [message]
+  #name: dongwenxiao
+  #email: cs_victor@126.com
+  #ignore_hidden: false
+  
+
+  #git clone https://github.com/dongwenxiao/dongwenxiao.github.io.git .deploy_git
