@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "d": "node ./tools/deploy.js"
+    "d": "node ./tools/deploy.js",
+    "g": "hexo g"
   },
   "hexo": {
     "version": "3.7.1"
