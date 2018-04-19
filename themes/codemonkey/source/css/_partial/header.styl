@@ -23,6 +23,16 @@
   position: relative
   overflow: hidden
 
+.logo
+  float left
+  margin-top 9px
+  @media mq-mobile
+    float right
+    margin: 15px 0px 0 0
+  img 
+    width logo-size
+    border-radius 50%
+
 #banner
   position: absolute
   top: 0
@@ -44,13 +54,13 @@
 $logo-text
   text-decoration: none
   color: #fff
-  font-weight: 300
+  font-weight: 600
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
 
-#logo
+.big-title
   @extend $logo-text
-  font-size: logo-size
-  line-height: logo-size
+  font-size: big-title-size
+  line-height: big-title-size
   letter-spacing: 2px
 
 #subtitle
@@ -63,20 +73,21 @@ $logo-text
   margin-top: subtitle-size
 
 #main-nav
-  float: left
-  margin-left: -15px
+  float: right
+  @media mq-mobile
+    float left
 
 $nav-link
   float: left
   color: #fff
-  opacity: 0.6
+  opacity: .8
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
   transition: opacity 0.2s
   display: block
   padding: 20px 15px
   &:hover
-    opacity: 1
+    opacity 1
 
 .nav-icon
   @extend $nav-link
@@ -91,7 +102,8 @@ $nav-link
 
 .main-nav-link
   @extend $nav-link
-  font-weight: 300
+  font-weight: 600
+  font-size font-size-nav
   letter-spacing: 1px
   @media mq-mobile
     display: none
@@ -103,63 +115,63 @@ $nav-link
   @media mq-mobile
     display: block
 
-#sub-nav
-  float: right
-  margin-right: -15px
+// #sub-nav
+//   float: right
+//   margin-right: -15px
 
 #nav-rss-link
   &:before
     content: "\f09e"
 
-#nav-search-btn
-  &:before
-    content: "\f002"
+// #nav-search-btn
+//   &:before
+//     content: "\f002"
 
-#search-form-wrap
-  position: absolute
-  top: 15px
-  width: 150px
-  height: 30px
-  right: -150px
-  opacity: 0
-  transition: 0.2s ease-out
-  &.on
-    opacity: 1
-    right: 0
-  @media mq-mobile
-    width: 100%
-    right: -100%
+// #search-form-wrap
+//   position: absolute
+//   top: 15px
+//   width: 150px
+//   height: 30px
+//   right: -150px
+//   opacity: 0
+//   transition: 0.2s ease-out
+//   &.on
+//     opacity: 1
+//     right: 0
+//   @media mq-mobile
+//     width: 100%
+//     right: -100%
 
-.search-form
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  background: #fff
-  padding: 5px 15px
-  border-radius: 15px
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+// .search-form
+//   position: absolute
+//   top: 0
+//   left: 0
+//   right: 0
+//   background: #fff
+//   padding: 5px 15px
+//   border-radius: 15px
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
 
-.search-form-input
-  border: none
-  background: none
-  color: color-default
-  width: 100%
-  font: 13px font-sans
-  outline: none
-  &::-webkit-search-results-decoration
-  &::-webkit-search-cancel-button
-    -webkit-appearance: none
+// .search-form-input
+//   border: none
+//   background: none
+//   color: color-default
+//   width: 100%
+//   font: 13px font-sans
+//   outline: none
+//   &::-webkit-search-results-decoration
+//   &::-webkit-search-cancel-button
+//     -webkit-appearance: none
 
-.search-form-submit
-  position: absolute
-  top: 50%
-  right: 10px
-  margin-top: -7px
-  font: 13px font-icon
-  border: none
-  background: none
-  color: #bbb
-  cursor: pointer
-  &:hover, &:focus
-    color: #777
+// .search-form-submit
+//   position: absolute
+//   top: 50%
+//   right: 10px
+//   margin-top: -7px
+//   font: 13px font-icon
+//   border: none
+//   background: none
+//   color: #bbb
+//   cursor: pointer
+//   &:hover, &:focus
+//     color: #777

@@ -88,3 +88,12 @@ deploy:
   
 
   #git clone https://github.com/dongwenxiao/dongwenxiao.github.io.git .deploy_git
+
+
+stylus:
+  compress: false
+  sourcemaps:
+    comment: true
+    inline: true
+    sourceRoot: ''
+    basePath: .
