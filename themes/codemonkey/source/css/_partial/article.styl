@@ -6,6 +6,8 @@
   overflow: hidden
 
 .article-meta
+  border-top: 12px solid #999
+  padding-top: 10px
   clearfix()
 
 .article-date
@@ -37,12 +39,17 @@
   transition: color 0.2s
   a&:hover
     color: color-link
-
+.article-more
+  padding: 10px article-padding
 .article-entry
   @extend $base-style
   clearfix()
   color: color-default
   padding: 0 article-padding
+  max-height: 250px
+  @media mq-mobile
+    max-height: 150px
+  overflow: hidden
   p, table
     line-height: line-height
     margin: line-height 0

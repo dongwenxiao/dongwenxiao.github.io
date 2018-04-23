@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 大标题
+title: 董文枭's Website
 subtitle: 小标题
-description: 描述
-keywords: 关键字
-author: John Doe
+description: 董文枭的个人网站
+keywords: 董文枭,web前端开发,cmcm,猎豹移动
+author: 董文枭
+email: cs_victor@126.com
 language: zh-CN
 timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://me.websage.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
