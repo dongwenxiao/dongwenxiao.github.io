@@ -98,3 +98,9 @@ stylus:
     inline: true
     sourceRoot: ''
     basePath: .
+  
+# Table Of Contents in the Sidebar
+toc:
+  enable: true
+  # Automatically add list number to toc.
+  number: false

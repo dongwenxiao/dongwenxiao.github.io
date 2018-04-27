@@ -1,0 +1,12 @@
+<% if (page.content){ %>
+  <div class="widget-wrap">
+    <h3 class="widget-title"><%- __('sidebar.toc') %></h3>
+    <div class="widget">
+      <div class="hidden-xs col-sm-3 toc-col">
+        <div class="toc-wrap">
+            <%- toc(page.content, {list_number: config.toc.number}) %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% } %>

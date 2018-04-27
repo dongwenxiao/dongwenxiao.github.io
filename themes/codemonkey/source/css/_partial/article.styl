@@ -22,6 +22,10 @@
   margin-left: 8px
   &:before
     content: "\2022"
+  
+.article-footer-date
+  float: right
+  color: color-grey
 
 .article-category-link
   @extend $block-caption
@@ -46,10 +50,12 @@
   clearfix()
   color: color-default
   padding: 0 article-padding
-  max-height: 250px
-  @media mq-mobile
-    max-height: 150px
   overflow: hidden
+
+  &.less
+    max-height: 250px
+    @media mq-mobile
+      max-height: 150px
   p, table
     line-height: line-height
     margin: line-height 0

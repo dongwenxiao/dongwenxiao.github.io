@@ -1,5 +1,13 @@
 <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
-  <% theme.widgets.forEach(function(widget){ %>
+  <%
+    let widgets = theme.widgets.filter((w) => {
+      if(is_post())
+        return 'toc' === w
+      else
+        return 'toc' !== w
+    })
+  %>
+  <% widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
 </aside>

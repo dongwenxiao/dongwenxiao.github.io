@@ -1,7 +1,13 @@
+<%
+let isLessMode = !!index
+let lessClass = isLessMode ? 'less' : ''
+%>
+
+
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
+    <!-- <%- partial('post/date', {class_name: 'article-date', date_format: null}) %> -->
+    <!-- <%- partial('post/category') %> -->
   </div>
   <div class="article-inner">
     <%- partial('post/gallery') %>
@@ -10,7 +16,7 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
+    <div class="article-entry <%= lessClass %>" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
@@ -24,7 +30,8 @@
     </div>
     <div class="article-more">...</div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
+      <span class="article-footer-date"><%= date(post.date, null) %></span>
+      <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a> -->
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('comment') %></a>
       <% } %>
