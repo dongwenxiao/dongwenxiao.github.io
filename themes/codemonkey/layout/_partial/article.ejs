@@ -28,7 +28,7 @@ let lessClass = isLessMode ? 'less' : ''
         <%- post.content %>
       <% } %>
     </div>
-    <div class="article-more">...</div>
+    <div class="article-more <%= lessClass %>">...</div>
     <footer class="article-footer">
       <span class="article-footer-date"><%= date(post.date, null) %></span>
       <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a> -->

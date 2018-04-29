@@ -1,5 +1,9 @@
-<header id="header">
-  <div id="banner"></div>
+<%
+let customBanner = page.banner ? `style="background-image: url(${page.banner})"` : '';
+let homeClass = is_home() ? 'class="home-page"' : '';
+%>
+<header id="header" <%- homeClass %>>
+  <div id="banner" <%-customBanner%>></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner" style="display:none;">
       <h1 id="big-title-wrap">
