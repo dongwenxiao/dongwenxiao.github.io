@@ -2,6 +2,7 @@
 title: 关于
 layout: about
 banner: https://huangxuan.me/img/about-bg-walle.jpg
+banner-height: 300px
 ---
 
 # 董文枭

@@ -1,9 +1,12 @@
 <%
 let customBanner = page.banner ? `style="background-image: url(${page.banner})"` : '';
+let customBannerClsss = page.banner ? 'custom' : ''
 let homeClass = is_home() ? 'class="home-page"' : '';
+let bannerH = page['banner-height'];
+let bannerHeight = bannerH ? `style="height: ${bannerH}"` : ''
 %>
-<header id="header" <%- homeClass %>>
-  <div id="banner" <%-customBanner%>></div>
+<header id="header" <%- homeClass %> <%- bannerHeight %>>
+  <div id="banner" class="<%- customBannerClsss %>" <%-customBanner%>></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner" style="display:none;">
       <h1 id="big-title-wrap">
