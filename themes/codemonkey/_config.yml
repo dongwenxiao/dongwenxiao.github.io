@@ -5,6 +5,7 @@ menu:
   About: /about
   # Github: https://github.com/dongwenxiao
 rss: /atom.xml
+banner: images/banner.gif
 
 # Content
 excerpt_link: Read More
