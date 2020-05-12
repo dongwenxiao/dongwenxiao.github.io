@@ -1,0 +1,113 @@
+---
+title: 网站开发指南
+subtitle: sss
+description: ddd
+keywords: ffff
+tag: 
+    - 文档
+    - 网站
+category: 类别一
+---
+
+网站开发是个很简单的事情，如果是你程序员，每个编程技术点你很快的就能掌握。
+网站开发也是件很复杂的事儿，因为它是有N多个小小的技术点组成，技术点虽简单，但是要有灵魂的串起来就需要有经验的积累了。
+此本的目标是帮助初学者扫盲，减少低级错误，试用于WEB前端攻城狮。
+<!-- 
+
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues). -->
+
+
+## 技术方案
+### SSR 传统页面模板方式
+### Isomorphic 同构方式
+### Github Pages
+
+
+## 动画方案
+### CSS3
+### Canvas
+### SVG
+
+
+## HTML、CSS、JS 压缩
+### 使用工具压缩
+
+## 图片压缩
+### 使用 Photoshop 压缩图片
+### 使用 tinypng 压缩图片
+### 使用工具压缩图片
+
+
+## SEO 配置
+### meta 标签的配置
+### 标签的语义化
+
+
+## 响应式设计
+### 栅格系统
+### 特殊处理
+
+
+## 浏览器兼容
+### 适配浏览器、内核
+### caniuse
+### 降级兼容策略
+
+
+## 移动适配
+### iOS 适配
+### Android 适配
+### 屏幕尺寸
+
+
+## 网站统计
+### PV、UV、来源等默认统计
+### 自定义事件统计
+
+
+## 开发环境
+### VSCode 配置
+
+
+## 部署
+### 域名
+### 服务器、容器
+### HA
+
+
+## 社交分享
+### og 通用策略
+### 微信分享
+### 微博分享
+
+
+
+## PWA
+### 离线应用
+### WebAPP 配置
+
+
+## Webassembly
+
+
+## 版权保护
+### 页脚声明
+### 图片水印
+### 图片水印加密
+
+
+## 测试
+### 灯塔 Audits
+#### 可访问性
+#### SEO
+
+
+## 工具集？
+
+
+## API
+### REST规范
+### GraphQL
+
+
+## HTML 的 Head

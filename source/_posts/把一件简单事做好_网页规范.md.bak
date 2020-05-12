@@ -1,0 +1,92 @@
+---
+title: 把一件简单事做好 - 网页开发规范（指标要求+说明）、针对每个要的的技巧
+subtitle: sss
+description: ddd
+keywords: ffff
+tag: 
+    - 文档
+    - 网站
+category: 类别一
+---
+
+网站开发是个很简单的事情，如果是你程序员，每个编程技术点你很快的就能掌握。
+网站开发也是件很复杂的事儿，因为它是有N多个小小的技术点组成，技术点虽简单，但是要有灵魂的串起来就需要有经验的积累了。
+此本的目标是帮助初学者扫盲，减少低级错误，试用于WEB前端攻城狮。
+<!-- 
+
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues). 
+-->
+
+
+## 资源压缩
+网路请求的资源都需被压缩
+### Gzip
+### HTML
+### CSS
+### JS
+### 禁用第三方
+### 图片
+    渐进显示CDN、css
+    压缩处理：ps、tinypng
+    
+#### 使用 Photoshop 压缩图片
+#### 使用 tinypng 压缩图片
+#### 使用工具压缩图片
+### 图标
+jpg>png>svg>font
+### 字体
+### 音频
+### 视频
+
+
+
+## 缓存
+### Response Header
+### CDN
+
+
+## SEO 配置
+### meta 标签的配置
+### 标签的语义化
+
+
+## 适配
+### 响应式
+### 浏览器
+#### 样式、动画降级处理
+
+
+## 社交分享
+### og 通用策略
+### 微信分享
+### 微博分享
+
+
+## 安全
+### HTTPS
+### XSS
+    Nginx配置
+
+
+## 法律
+### 版权
+### Cookie使用说明
+
+
+## 网站统计
+### PV、UV、来源等默认统计
+### 自定义事件统计
+
+
+## 体验
+### PWA
+### Isomorphic
+## 用户体验
+### 无明显卡顿
+### 可交互按钮、链接等需要有hover、active
+### 表单支持键盘回车
+### input光标不占满整个输入框
+### 表单的输入项使用tab跳转的顺序合理
+### AJAX请求时UI的反馈 Loading状态
+### z-index 层级定义 1xxx  2xxx 3xxx
+### 图片支持高清

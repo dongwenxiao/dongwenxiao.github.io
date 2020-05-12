@@ -1,0 +1,37 @@
+---
+title: 网站开发 - 资源压缩
+description: Web前端资源压缩
+keywords: 资源压缩
+tag: 
+    - 网站开发
+    - 网站优化
+category: 网站开发
+---
+
+网页下载的资源越多网页展示的就越慢，快速打开网页需要尽可能的减少资源的体积，同时减少了流量，也就是降低了成本。网页资源类型不同，需要做的压缩策略也有所不同。文档类型的基本可以做到无损压缩，但媒体类型的就需要适当压缩。例如图片，如果过度压缩会影响用户视觉体验，我需要根据显示设备的DPR(Device Pixel Ratio)来觉得使用什么样的图片。
+
+> 下面具体说说
+
+## 资源类型
+
+网站请求的资源包括如下这些，也是压缩后的结果可比较的维度：
+- 文档：HTML、CSS、JS
+- 请求：XHR(XMLHttpRequest)、WS(WebScoket)
+- 媒体：Font、Image、Audio、Video、直播
+- 其他
+
+👇下面挨个说说 👇
+
+## 文档压缩
+
+- 文档包括 HTML、CSS、JS 都是文本字符串，字符串去掉没有价值的空格、回车啥的就能减小体积。
+   - HTML 还可以在DOM架构上优化，用减少元素数量方式来缩小 HTML 字符串。
+   - 
+- 在传输时候使用 GZip 压缩内容。
+
+### 注意
+ - [GZip](https://baike.baidu.com/item/gzip/4487553) 虽然可以在传输过程中减少文档体积，但是会影响 [ETag](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/ETag) 的使用，所以要提前确认是否需要ETag。
+
+
+## 请求压缩
+
