@@ -56,7 +56,7 @@ function init() {
 
         //
         writeCommentBlock([
-            '这个简历有点丑，这可不是前端攻城狮的性格 :(',
+            '这段介绍有点丑，这可不是技术极客的性格 :(',
             '下面我来美化一下吧。',
             '首先，加个基础动画设置，动起来别太愣！'
         ]);
@@ -381,7 +381,7 @@ function writeResume(callback) {
     // writeH(h, panel);
     // writeP(p, panel);
 
-    h = '联系我';
+    h = '联系我 📧';
     p = 'Phone / Wechat:<br>' +
         '18611081011<br>' +
         'Email:<br>' +
