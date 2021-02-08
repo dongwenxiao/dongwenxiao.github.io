@@ -1,5 +1,8 @@
 ---
 title: koot.js 回忆录
+# banner: /css/images/about-bg-walle.jpg
+# banner-height: 500px
+banner-color: 494ca0
 date: 2021-02-07
 tags:
   - 技术

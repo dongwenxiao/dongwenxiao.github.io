@@ -1,12 +1,33 @@
 <%
-let customBanner = page.banner ? `style="background-image: url(${page.banner})"` : '';
-let customBannerClsss = page.banner ? 'custom' : ''
+let customBanner = "";
+
+<!-- banner背景图 -->
+if(page.banner) customBanner = `background-image: url(${page.banner})`;
+if(is_home()) customBanner = "background-image: url(/css/images/banner.gif)";
+
+<!-- banner高度 -->
+let bannerHeight = page['banner-height'];
+if(bannerHeight) customBanner += `;height: ${bannerHeight}`;
+let bannerHeightStyle = '';
+if(bannerHeight) bannerHeightStyle = `style="height: ${bannerHeight}"`;
+
+<!-- banner背景颜色 defualt:f8dc57 -->
+let bannerBgColor = page['banner-color'];
+if(bannerBgColor) customBanner += `;background-color: #${bannerBgColor}`;
+
+<!--  -->
+customBanner = `style="${customBanner}"`;
+
+<!--  -->
 let homeClass = is_home() ? 'class="home-page"' : '';
-let bannerH = page['banner-height'];
-let bannerHeight = bannerH ? `style="height: ${bannerH}"` : ''
+let customClass = ''
+if(!is_home() && page.banner) customClass = 'custom'
+
+
+
 %>
-<header id="header" <%- homeClass %> <%- bannerHeight %>>
-  <div id="banner" class="<%- customBannerClsss %>" <%-customBanner%>></div>
+<header id="header" <%-homeClass%> <%-bannerHeightStyle%> data-log="<%-bannerHeight%>">
+  <div id="banner" class="<%-customClass%>" <%-customBanner%>></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner" style="display:none;">
       <h1 id="big-title-wrap">

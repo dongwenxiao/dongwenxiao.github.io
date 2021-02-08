@@ -1,10 +1,10 @@
 ---
 title: sp-boilerplate (super-project 模板项目)
 date: 2018-04-19 10:34:00
+banner-color: 4644b1
 tags:
     - 技术
     - koot.js
-category: 类别二
 ---
 
 super-project 是 koot.js 的前身。

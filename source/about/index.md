@@ -1,7 +1,7 @@
 ---
 title: 关于
 layout: about
-banner: https://huangxuan.me/img/about-bg-walle.jpg
+banner: /css/images/about-bg-walle.jpg
 banner-height: 300px
 ---
 
