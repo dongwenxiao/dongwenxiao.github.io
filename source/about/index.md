@@ -7,20 +7,22 @@ banner-height: 300px
 
 # 董文枭
 
-一名 Web Developer，来自东北。
+来自东北 **佳木斯** 的 Web Developer
 
 ## Work
 
-目前就职于猎豹移动用户体验部，负责FED的Web前端开发工作。
+猎豹移动用户体验部，负责 [CMUX](https://cmux.cmcm.com/) 的 WEB 前端工作
 
 ## Skill
 
-- JS / Node / Less / React / Redux / Webpack
-- MySQL / MongoDB / PHP / C#
-- Java
-
+- HTML / Javascript /CSS
+- React / Redux / Webpack / Less / TailwindCSS
+- MySQL / MongoDB / Sequelize
+- Ioinc / Electron
+- Node / Koa /Serverless
+- Cocos2d-JS
 
 ## Open Source
 
-[Super.js](https://super.js.org)  - Web全栈技术框架。
-[Static HTML](https://github.com/dongwenxiao/static-html) - 静态HTML生成工具。
+[koot.js](https://koot.js.org) - 基于 React 和 Koa 的全栈技术框架
+[Static HTML](https://github.com/dongwenxiao/static-html) - 静态 HTML 生成工具
