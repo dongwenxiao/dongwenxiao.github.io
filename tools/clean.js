@@ -4,6 +4,7 @@ const todo = [
     'public/**',
     '!public', 
     '!public/CNAME',
+    '!public/sayhi/**',
     '!public/other/**'
 ]
 
