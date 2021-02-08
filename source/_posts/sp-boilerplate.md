@@ -2,10 +2,12 @@
 title: sp-boilerplate (super-project 模板项目)
 date: 2018-04-19 10:34:00
 tags:
-    - 文档
-    - Superproject
+    - 技术
+    - koot.js
 category: 类别二
 ---
+
+super-project 是 koot.js 的前身。
 
 ## 目录 /apps 说明
 
