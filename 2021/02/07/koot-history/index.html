@@ -254,22 +254,6 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     </div>
   </div>
 </footer>
-
-<!-- Baidu auto push js -->
-<script>
-  (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      }
-      else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-  </script>
     </div>
     <nav id="mobile-nav">
   
@@ -297,6 +281,23 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
   </div>
 </body>
 </html>
+
+<!-- Baidu auto push js -->
+<script>
+  ;(function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137365876-3"></script>
 <script>
