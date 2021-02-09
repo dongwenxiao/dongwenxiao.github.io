@@ -1,6 +1,6 @@
 ---
 title: Hello Hexo
-date: 2018-04-17
+date: 2016-10-01
 tag: 
     - 技术
 category: 类别一
