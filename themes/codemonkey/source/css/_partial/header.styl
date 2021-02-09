@@ -1,6 +1,8 @@
 .home-page
   height: banner-height
   background-images: url(banner-url)
+  @media mq-mobile
+    height: 300px !important
 #header
   position: relative
   border-bottom: 1px solid color-border
@@ -9,7 +11,8 @@
   @media mq-tablet
     height 400px
   @media mq-mobile
-    height 300px
+    height: 140px;
+    min-height: auto;
   &:before, &:after
     content: ""
     position: absolute
@@ -57,7 +60,10 @@
     background-size: 900px;
   &.custom
     background-size: cover
-  
+
+.home-page
+  #banner
+    background-color: #f8dc57
 
 #header-title
   text-align: center

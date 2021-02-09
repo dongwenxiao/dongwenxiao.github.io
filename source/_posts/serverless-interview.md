@@ -1,7 +1,7 @@
 ---
 title: 2020 Serverless 实践，腾讯云采访
 date: 2020-05-15
-banner-color: 2fa73e
+banner-color: ec670a
 tags:
     - 分享
     - koot.js
