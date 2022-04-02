@@ -16,12 +16,10 @@ git checkout -b src origin/src
 
 在`./dongwenxiao.github.io/`下创建`public`文件夹，用于存放生成的静态网页。
 
-进入`/public`文件夹，克隆`master`分支
+克隆 `master` 分支到 `/public` 文件夹
 
 ```
-cd ./dongwenxiao.github.io/public/
-
-git clone git@github.com:dongwenxiao/dongwenxiao.github.io.git
+git clone git@github.com:dongwenxiao/dongwenxiao.github.io.git public
 ```
 
 **Step 3**

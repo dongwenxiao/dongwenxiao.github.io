@@ -6,7 +6,7 @@
     "start": "hexo server",
     "auto": "yarn clean && yarn generate && yarn deploy",
     "deploy": "node ./tools/deploy.js",
-    "generate": "hexo g",
+    "generate": "hexo generate",
     "clean": "node ./tools/clean.js",
     "ci": "git add . && git commit -m 'no comment' && git push"
   },

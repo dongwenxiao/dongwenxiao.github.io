@@ -7,6 +7,7 @@ date: 2021-02-07
 tags:
   - 技术
   - koot.js
+  - React
 ---
 
 [koot.js](https://koot.js.org) 的历史到现在，大概有 5 个年头了，我打算停止投入，所以写下这篇回忆录。
