@@ -10,7 +10,7 @@ keywords: 董文枭,web前端开发,cmcm,猎豹移动
 author: 董文枭
 email: cs_victor@126.com
 language: zh-CN
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -44,16 +44,16 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 5
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -86,7 +86,6 @@ deploy:
   #name: dongwenxiao
   #email: cs_victor@126.com
   #ignore_hidden: false
-  
 
   #git clone https://github.com/dongwenxiao/dongwenxiao.github.io.git .deploy_git
 
@@ -96,9 +95,9 @@ stylus:
   sourcemaps:
     comment: true
     inline: true
-    sourceRoot: ''
+    sourceRoot: ""
     basePath: .
-  
+
 # Table Of Contents in the Sidebar
 toc:
   enable: true

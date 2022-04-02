@@ -29,3 +29,11 @@ git clone git@github.com:dongwenxiao/dongwenxiao.github.io.git public
 ```
 yarn auto
 ```
+
+
+## 常见问题
+
+* hexo生成的html文件是空的
+
+可能是因为适用的node版本过新导致，建议使用node版本： v12.20.1
+（我使用 v16.13.0 不好使，改成 v12.20.1 恢复正常）
