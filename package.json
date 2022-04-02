@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "start": "hexo server",
-    "a": "yarn c && yarn g && yarn d",
-    "d": "node ./tools/deploy.js",
-    "g": "hexo g",
-    "c": "node ./tools/clean.js"
+    "auto": "yarn clean && yarn generate && yarn deploy",
+    "deploy": "node ./tools/deploy.js",
+    "generate": "hexo g",
+    "clean": "node ./tools/clean.js",
+    "ci": "git add . && git commit -m 'no comment' && git push"
   },
   "hexo": {
     "version": "3.7.1"
