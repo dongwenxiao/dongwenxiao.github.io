@@ -2,6 +2,10 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+
+  "engines": {
+    "node": "^12.20.0"
+  },
   "scripts": {
     "start": "hexo server",
     "auto": "yarn clean && yarn generate && yarn deploy",
