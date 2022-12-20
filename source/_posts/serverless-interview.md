@@ -8,8 +8,7 @@ tags:
     - 技术
 ---
 
-
-![](https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg)
+![](/assets/serverless-interview-photo.jpeg)
 
 ## 采访实录
 

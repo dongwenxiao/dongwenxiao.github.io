@@ -37,7 +37,7 @@ body
   clearfix()
   max-width: (column-width + gutter-width) * columns + gutter-width
   margin: 0 auto
-  padding: 0 gutter-width
+  padding: 50px gutter-width 0
 
 .inner
   column(columns)
@@ -91,3 +91,7 @@ if sidebar is left
 
 if sidebar
   @import "_partial/sidebar"
+
+.toc-sticky
+  position: sticky;
+  top: 0;
