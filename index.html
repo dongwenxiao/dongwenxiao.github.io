@@ -9,16 +9,15 @@
   <title>董文枭&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="董文枭的个人网站">
-<meta name="keywords" content="董文枭,web前端开发,cmcm,猎豹移动">
 <meta property="og:type" content="website">
 <meta property="og:title" content="董文枭&#39;s Website">
 <meta property="og:url" content="http://me.websage.com/index.html">
 <meta property="og:site_name" content="董文枭&#39;s Website">
 <meta property="og:description" content="董文枭的个人网站">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="董文枭">
+<meta property="article:tag" content="董文枭,web前端开发,CM,猎豹移动">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="董文枭&#39;s Website">
-<meta name="twitter:description" content="董文枭的个人网站">
   
     <link rel="alternate" href="/atom.xml" title="董文枭&#39;s Website" type="application/atom+xml">
   
@@ -28,11 +27,13 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   
-</head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
   <div id="container">
@@ -45,10 +46,6 @@
       <h1 id="big-title-wrap">
         <a href="/" class="big-title">董文枭&#39;s Website</a>
       </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">小标题</a>
-        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -93,20 +90,12 @@
     
     <div class="article-entry less" itemprop="articleBody">
       
-        <p><a href="https://koot.js.org" target="_blank" rel="noopener">koot.js</a> 的历史到现在，大概有 5 个年头了，我打算停止投入，所以写下这篇回忆录。</p>
-<h2 id="初心"><a class="markdownIt-Anchor" href="#初心"></a> 初心</h2>
-<p>2015 年我开始接触 React 觉得很有趣，和 jQuery 相比页面开发思路更清晰，不需要用 js 直接操作 DOM 就可以完成页面交互逻辑。<br>
-在学习 React 的同时也接触到了 Redux、Webpack 这些技术，直到现在他们也非常流行。</p>
-<p>我第一次完整的使用 React 进行项目实践是 2016 年 5 月，做了一款<a href="https://github.com/dongwenxiao/snakes" target="_blank" rel="noopener">多人在线贪吃蛇 snakes</a>游戏。<br>
-大概用的技术有：React、Redux、<a href="http://Socket.io" target="_blank" rel="noopener">Socket.io</a>、Less、Babel、Webpack…<br>
-同期也做了一次团队的技术分享，在现场会上大家通过浏览器加入了游戏场景，一起试玩。</p>
+        <p><a target="_blank" rel="noopener" href="https://koot.js.org/">koot.js</a> 的历史到现在，大概有 5 个年头了，我打算停止投入，所以写下这篇回忆录。</p>
+<h2 id="初心"><a href="#初心" class="headerlink" title="初心"></a>初心</h2><p>2015 年我开始接触 React 觉得很有趣，和 jQuery 相比页面开发思路更清晰，不需要用 js 直接操作 DOM 就可以完成页面交互逻辑。<br>在学习 React 的同时也接触到了 Redux、Webpack 这些技术，直到现在他们也非常流行。</p>
+<p>我第一次完整的使用 React 进行项目实践是 2016 年 5 月，做了一款<a target="_blank" rel="noopener" href="https://github.com/dongwenxiao/snakes">多人在线贪吃蛇 snakes</a>游戏。<br>大概用的技术有：React、Redux、Socket.io、Less、Babel、Webpack…<br>同期也做了一次团队的技术分享，在现场会上大家通过浏览器加入了游戏场景，一起试玩。</p>
 <p>问题来了，因为之前有开发游戏的经验，对游戏的设计和编码并不难，所以整个项目花费时间最多的是项目技术搭建，差不多占了一半的时间成本。在工作中，大家不敢轻易使用 React，担心遇到配置问题搞不定而卡住，为了解决团队在使用 React 的疑虑，我开始有了搭建 React 技术框架的想法。</p>
-<h2 id="内部孵化-super-project"><a class="markdownIt-Anchor" href="#内部孵化-super-project"></a> 内部孵化 super-project</h2>
-<p>随后，我就基于之前尝试的 React 项目开始思考如何搭建项目结构、如何选型合适的技术，并动手开发了一个非常基础的 React 开发框架，命名为 super-project，2016 年 8 月 17 日第一次 Commit 到公司内部的 Gitlab 上。<br>
-当时的前端 Leader 是李阳，我们在技术上有较好的共识，他开始支持我的 super-project 想法，并召集了当时团队几个技术不错的同学一起搞，所以在此我感谢当时在 super-project 付出的人：李阳、胡昕、孙驰、张攀（排名不分先后）。</p>
-<h2 id="目标-探索-实践"><a class="markdownIt-Anchor" href="#目标-探索-实践"></a> 目标 &amp; 探索 &amp; 实践</h2>
-<h3 id="目标"><a class="markdownIt-Anchor" href="#目标"></a> 目标</h3>
-<p>当时 GitHub 社区上就有 create-react-app 脚手架可以快速开始一个 React 项目，但那太基础了，我们开始结合日常的工作思考 🤔</p>
+<h2 id="内部孵化-super-project"><a href="#内部孵化-super-project" class="headerlink" title="内部孵化 super-project"></a>内部孵化 super-project</h2><p>随后，我就基于之前尝试的 React 项目开始思考如何搭建项目结构、如何选型合适的技术，并动手开发了一个非常基础的 React 开发框架，命名为 super-project，2016 年 8 月 17 日第一次 Commit 到公司内部的 Gitlab 上。<br>当时的前端 Leader 是李阳，我们在技术上有较好的共识，他开始支持我的 super-project 想法，并召集了当时团队几个技术不错的同学一起搞，所以在此我感谢当时在 super-project 付出的人：李阳、胡昕、孙驰、张攀（排名不分先后）。</p>
+<h2 id="目标-amp-探索-amp-实践"><a href="#目标-amp-探索-amp-实践" class="headerlink" title="目标 &amp; 探索 &amp; 实践"></a>目标 &amp; 探索 &amp; 实践</h2><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>当时 GitHub 社区上就有 create-react-app 脚手架可以快速开始一个 React 项目，但那太基础了，我们开始结合日常的工作思考 🤔</p>
 <ul>
 <li>如何一键开启开发环境？</li>
 <li>css 使用 css-loader 还是 css-in-js 方式？css 的开发能不能像之前一样独立书写 class 又能做的易读、不担心重复？</li>
@@ -117,75 +106,45 @@
 <li>能不能把首屏渲染做到最小且内容非常完整？</li>
 <li>后来，关心是否可以直接把 PWA 也实现了</li>
 </ul>
-<h3 id="探索"><a class="markdownIt-Anchor" href="#探索"></a> 探索</h3>
-<p>带着这样的目标我们开始了技术的探索。</p>
-<p>还记得当时我在做样式处理这部分探索的时候，css-loader 和 css-in-js 两种方式都觉得还不够。<br>
-css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需求的，但是在打包后，class 名的阅读性和唯一性则变得冲突起来，作为前端 geeker，我希望能把鱼和熊掌都需要，把 class 名的阅读性和唯一性都保持下来，另外希望配合按需加载把页面所需要的最少 css 提取出来。所以自己开发了处理 css 的 webpack loader 叫<a href="https://www.npmjs.com/package/wrapper-css-loader" target="_blank" rel="noopener">wrapper-css-loader</a>，后来进化成 koot-css-loader 合并到 koot 里。</p>
+<h3 id="探索"><a href="#探索" class="headerlink" title="探索"></a>探索</h3><p>带着这样的目标我们开始了技术的探索。</p>
+<p>还记得当时我在做样式处理这部分探索的时候，css-loader 和 css-in-js 两种方式都觉得还不够。<br>css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需求的，但是在打包后，class 名的阅读性和唯一性则变得冲突起来，作为前端 geeker，我希望能把鱼和熊掌都需要，把 class 名的阅读性和唯一性都保持下来，另外希望配合按需加载把页面所需要的最少 css 提取出来。所以自己开发了处理 css 的 webpack loader 叫<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/wrapper-css-loader">wrapper-css-loader</a>，后来进化成 koot-css-loader 合并到 koot 里。</p>
 <p> 还有多语言，当时是胡昕主要负责的模块，期望目标是尽量不改变 JSX 的组件结构，又同时能满足 SPA 和 SSR 两种模式，实现多语言切换双标准。</p>
 <ul>
-<li>URL 切换，eg：<a href="http://www.cmcm.com/en/" target="_blank" rel="noopener">www.cmcm.com/en/</a> 、<a href="http://www.cmcm.com/zh-cn/" target="_blank" rel="noopener">www.cmcm.com/zh-cn/</a></li>
+<li>URL 切换，eg：<a target="_blank" rel="noopener" href="http://www.cmcm.com/en/">www.cmcm.com/en/</a> 、<a target="_blank" rel="noopener" href="http://www.cmcm.com/zh-cn/">www.cmcm.com/zh-cn/</a></li>
 <li>HTTP Header Accept-Language</li>
 </ul>
 <p>当然，注入此类的探索还有很多，这里不多说了…</p>
-<h3 id="实践验证-photogrid-instanews"><a class="markdownIt-Anchor" href="#实践验证-photogrid-instanews"></a> 实践验证 PhotoGrid &amp; InstaNews</h3>
-<p>又过了一段时间，大概 2017 年初，刚好有两个重要性没那么强的项目，我们基于 super-project 开发了 PhotoGrid 网页版和 InstaNews 的网页版。使用了 Isomorphic 技术，也就是同构。成功的把 React 页面通过 Node Server 渲染出来，并且在浏览器端展示出来之后又保持了 SPA 的特性。<br>
-满足网页 SEO 的同时又保持着 WebAPP 单页面应用的体验。从此也验证了 super-project 的可行性。</p>
+<h3 id="实践验证-PhotoGrid-amp-InstaNews"><a href="#实践验证-PhotoGrid-amp-InstaNews" class="headerlink" title="实践验证 PhotoGrid &amp; InstaNews"></a>实践验证 PhotoGrid &amp; InstaNews</h3><p>又过了一段时间，大概 2017 年初，刚好有两个重要性没那么强的项目，我们基于 super-project 开发了 PhotoGrid 网页版和 InstaNews 的网页版。使用了 Isomorphic 技术，也就是同构。成功的把 React 页面通过 Node Server 渲染出来，并且在浏览器端展示出来之后又保持了 SPA 的特性。<br>满足网页 SEO 的同时又保持着 WebAPP 单页面应用的体验。从此也验证了 super-project 的可行性。</p>
 <p>PhotoGrid 的网页版是胡昕开发的，InstaNews 的网页版是李晓改开发的，在此感谢你们的勇于尝试。</p>
-<h3 id="坚持"><a class="markdownIt-Anchor" href="#坚持"></a> 坚持</h3>
-<p>super-project 在向好的方向发展，我从中学习到了很多，这个框架也帮助到了业务，但大家的技术理念不会一直很相同。<br>
-一年后，李阳离开了公司，其他同学在 super-project 上的贡献不多，只有胡昕一直还在与我为此奋斗。<br>
-当然，他在这个项目上也有较多的成长，所以很长一段时间我们可以一起搞技术研究。</p>
-<h2 id="对外公开改名-koot"><a class="markdownIt-Anchor" href="#对外公开改名-koot"></a> 对外公开改名 koot</h2>
-<p>当技术框架被验证之后，我们想帮助到更多的开发者，让 super-project 发挥更大的价值，所以我们讨论把它放到开源社区 GitHub 上。开始的时候我们想简化一点，比如叫 super.js 或者 superjs，但这些都被别人占用了。胡昕提议看看有哪些简单的字母开源拼起来，我们经过多次尝试发现，koot 这个词简单又没有人注册过 NPM 包，所以我们就定它了。</p>
-<p>注册了 NPM 包 koot，也注册了免费域名 <a href="http://koot.js.org" target="_blank" rel="noopener">koot.js.org</a>，看起来不错，是个好的开始。<br>
-随后又有一些新同学的加入：马振雨、王一奇、陈钦洋</p>
-<h2 id="技术的推广"><a class="markdownIt-Anchor" href="#技术的推广"></a> 技术的推广</h2>
-<h3 id="团队内部"><a class="markdownIt-Anchor" href="#团队内部"></a> 团队内部</h3>
-<p>李阳走之后我成为了前端团队的新 Leader，我发现团队里大部分项目使用的前端技术都不同，有的用 jQuery、有的用 AngularJS、React、Vue。这对团队协作大大增加了成本，于是我做了一个霸王决定，团队项目全部使用 koot 作为开发框架，开发 UI 全部是切换到了 React 上。这样的好处是大家有相同的技术基础，那么团队在技术上的积累和沉淀也有了 koot 这个落脚点。</p>
-<p>我的工作从主力开发变成了主要把控方向和技术推广。<br>
-大概有一年的时间，前端团队的项目几乎全部切换到了 koot 上。</p>
-<h3 id="公司内部"><a class="markdownIt-Anchor" href="#公司内部"></a> 公司内部</h3>
-<p>为了扩大 koot 的价值，让技术的能力传递的更广泛，我们在公司内部和开源社区上都做了响应的推广和分享。<br>
-2018 年 12 月，我联合培训部和一些热爱技术的同学一起搞了“豹前端主题分享月”，12 月里每周都会做面向全公司的技术分享，大部分内容和 koot 有关，帮助其他部门的前端同学了解 koot、使用 koot。很快公司有很多业务使用上了 koot，到 2019 年底公司与前端相关的业务有 80%都用到了 koot。</p>
-<h3 id="开源社区"><a class="markdownIt-Anchor" href="#开源社区"></a> 开源社区</h3>
-<p>在开源社区上的推广我们经验不足，通过 GitHub 自动检测发现虽然有一些项目在用，但数量不多，Star 也不多，如果让我再搞一次，我可能会选择多在一些自媒体平台上发布一下技术文章宣传。</p>
-<h2 id="选择不投入"><a class="markdownIt-Anchor" href="#选择不投入"></a> 选择不投入</h2>
-<h3 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景</h3>
-<p>2020 年，疫情来了，企业的工作方式发生了很大的变化，这一年我们公司的变动也很大，有不少业务收到影响，感觉一整年都在不停的调整架构。我们团队这一年里大部分的工作是交接和对接，技术的推进不多，主要是 koot 上了 Serverless。业务和团队的缩减，让我们在技术基建方面的投入变得少，我的主要工作偏向管理，胡昕也很少有时间去维护，koot 的在这一年里发展不多。</p>
-<h3 id="迭代落后"><a class="markdownIt-Anchor" href="#迭代落后"></a> 迭代落后</h3>
-<p>react-router 已经出了 v5、redux 已经出了 v4、webpack 也出了 v5，等等很多技术生态库已经迭代升级一圈了，但 koot 跟不上了…<br>
-现在的市场上已经术业有专攻，React SSR 的解决方案有 Next.js，项目脚手架有 umi ，后台系统组件库有 antd 等等… 此时 koot 解决的问题大部分可以在前端行业里找到相似或者更好的方案。koot 如果不改变就无法为使用者带来较好的技术价值，如果继续投入精力就需要做的比 umi、Next.js 等开源技术做的好，那其实非常难，因为这些开源项目已经建立了很好的生态，有使用者和生产者的自循环。</p>
-<h3 id="认知边界"><a class="markdownIt-Anchor" href="#认知边界"></a> 认知边界</h3>
-<p>另一方面是到了认知边界。技术的根本是为了解决实际的问题，在最早的 super-project 是为了解决 👆 上面列出的一系列问题而诞生的，这些问题都是我们认知范围内知道要解决的。当我们已经把自己认知范围内的问题都解决掉了，而且业内也有更好解决方案的时候，我们没必要追赶，而是应该去洞察技术开发过程中还有什么问题需要被解决。解决了新的问题才回有新的价值，但不要为了解决问题而创造问题！</p>
-<h3 id="站在公司角度的选择"><a class="markdownIt-Anchor" href="#站在公司角度的选择"></a> 站在公司角度的选择</h3>
-<p>选择不投入，这是我代表公司做出的选择，因为在公司层面是需要考虑投入与产出比的，如果不能为公司带来更多价值，我会果断选项停止投入。但这不代表个人行为的停止投入，胡昕在这个项目上也注入了大量的心血，我们会把 koot 当做玩技术的一个途径，基于它仍然可以做各种尝试。</p>
-<h2 id="历史"><a class="markdownIt-Anchor" href="#历史"></a> 历史</h2>
-<p>2016 年 8 月 17 日在猎豹移动的 Gitlab 上提交了第一次代码<br>
-贡献者：我、胡昕、孙驰、李阳、张攀</p>
-<p>2017 年 7 月 3 日在 <a href="https://github.com/cmux/koot/tree/9783c9cda276fd6410e94497e282c185c80823c8" target="_blank" rel="noopener">GitHub 上提交了第一次代码</a><br>
-贡献者：我、胡昕、马振雨、王一奇、陈钦洋</p>
-<p>2018 年 8 月 8 日在 NPM 上提交了<a href="https://www.npmjs.com/package/koot/v/0.0.1" target="_blank" rel="noopener">第一个 koot 包</a></p>
-<p>2020 年 5 月 15 日 在腾讯云 采访 koot 在 serverless 上的实践<br>
-<a href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview" target="_blank" rel="noopener">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
-<p>2020 年 7 月 9 日 在 ServerlessDay · China 大会上的 koot 案例分享<br>
-<a href="https://serverlesscloud.cn/blog/2020-07-09-serverlessdays-tencent-2" target="_blank" rel="noopener">https://serverlesscloud.cn/blog/2020-07-09-serverlessdays-tencent-2</a></p>
-<p>2017 年 11 月 猎豹十佳技术文章《2017 年的 WEB 前端开发 - 单页面终于嫁给了多页面》<br>
-<a href="https://twiki.cmcm.com/pages/viewpage.action?pageId=11339894" target="_blank" rel="noopener">https://twiki.cmcm.com/pages/viewpage.action?pageId=11339894</a></p>
-<h2 id="案例"><a class="markdownIt-Anchor" href="#案例"></a> 案例</h2>
-<p>猎豹移动官网<br>
-<a href="https://www.cmcm.com" target="_blank" rel="noopener">https://www.cmcm.com</a></p>
-<p>Bitrue 交易所<br>
-<a href="https://www.bitrue.com" target="_blank" rel="noopener">https://www.bitrue.com</a></p>
+<h3 id="坚持"><a href="#坚持" class="headerlink" title="坚持"></a>坚持</h3><p>super-project 在向好的方向发展，我从中学习到了很多，这个框架也帮助到了业务，但大家的技术理念不会一直很相同。<br>一年后，李阳离开了公司，其他同学在 super-project 上的贡献不多，只有胡昕一直还在与我为此奋斗。<br>当然，他在这个项目上也有较多的成长，所以很长一段时间我们可以一起搞技术研究。</p>
+<h2 id="对外公开改名-koot"><a href="#对外公开改名-koot" class="headerlink" title="对外公开改名 koot"></a>对外公开改名 koot</h2><p>当技术框架被验证之后，我们想帮助到更多的开发者，让 super-project 发挥更大的价值，所以我们讨论把它放到开源社区 GitHub 上。开始的时候我们想简化一点，比如叫 super.js 或者 superjs，但这些都被别人占用了。胡昕提议看看有哪些简单的字母开源拼起来，我们经过多次尝试发现，koot 这个词简单又没有人注册过 NPM 包，所以我们就定它了。</p>
+<p>注册了 NPM 包 koot，也注册了免费域名 koot.js.org，看起来不错，是个好的开始。<br>随后又有一些新同学的加入：马振雨、王一奇、陈钦洋</p>
+<h2 id="技术的推广"><a href="#技术的推广" class="headerlink" title="技术的推广"></a>技术的推广</h2><h3 id="团队内部"><a href="#团队内部" class="headerlink" title="团队内部"></a>团队内部</h3><p>李阳走之后我成为了前端团队的新 Leader，我发现团队里大部分项目使用的前端技术都不同，有的用 jQuery、有的用 AngularJS、React、Vue。这对团队协作大大增加了成本，于是我做了一个霸王决定，团队项目全部使用 koot 作为开发框架，开发 UI 全部是切换到了 React 上。这样的好处是大家有相同的技术基础，那么团队在技术上的积累和沉淀也有了 koot 这个落脚点。</p>
+<p>我的工作从主力开发变成了主要把控方向和技术推广。<br>大概有一年的时间，前端团队的项目几乎全部切换到了 koot 上。</p>
+<h3 id="公司内部"><a href="#公司内部" class="headerlink" title="公司内部"></a>公司内部</h3><p>为了扩大 koot 的价值，让技术的能力传递的更广泛，我们在公司内部和开源社区上都做了响应的推广和分享。<br>2018 年 12 月，我联合培训部和一些热爱技术的同学一起搞了“豹前端主题分享月”，12 月里每周都会做面向全公司的技术分享，大部分内容和 koot 有关，帮助其他部门的前端同学了解 koot、使用 koot。很快公司有很多业务使用上了 koot，到 2019 年底公司与前端相关的业务有 80%都用到了 koot。</p>
+<h3 id="开源社区"><a href="#开源社区" class="headerlink" title="开源社区"></a>开源社区</h3><p>在开源社区上的推广我们经验不足，通过 GitHub 自动检测发现虽然有一些项目在用，但数量不多，Star 也不多，如果让我再搞一次，我可能会选择多在一些自媒体平台上发布一下技术文章宣传。</p>
+<h2 id="选择不投入"><a href="#选择不投入" class="headerlink" title="选择不投入"></a>选择不投入</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>2020 年，疫情来了，企业的工作方式发生了很大的变化，这一年我们公司的变动也很大，有不少业务收到影响，感觉一整年都在不停的调整架构。我们团队这一年里大部分的工作是交接和对接，技术的推进不多，主要是 koot 上了 Serverless。业务和团队的缩减，让我们在技术基建方面的投入变得少，我的主要工作偏向管理，胡昕也很少有时间去维护，koot 的在这一年里发展不多。</p>
+<h3 id="迭代落后"><a href="#迭代落后" class="headerlink" title="迭代落后"></a>迭代落后</h3><p>react-router 已经出了 v5、redux 已经出了 v4、webpack 也出了 v5，等等很多技术生态库已经迭代升级一圈了，但 koot 跟不上了…<br>现在的市场上已经术业有专攻，React SSR 的解决方案有 Next.js，项目脚手架有 umi ，后台系统组件库有 antd 等等… 此时 koot 解决的问题大部分可以在前端行业里找到相似或者更好的方案。koot 如果不改变就无法为使用者带来较好的技术价值，如果继续投入精力就需要做的比 umi、Next.js 等开源技术做的好，那其实非常难，因为这些开源项目已经建立了很好的生态，有使用者和生产者的自循环。</p>
+<h3 id="认知边界"><a href="#认知边界" class="headerlink" title="认知边界"></a>认知边界</h3><p>另一方面是到了认知边界。技术的根本是为了解决实际的问题，在最早的 super-project 是为了解决 👆 上面列出的一系列问题而诞生的，这些问题都是我们认知范围内知道要解决的。当我们已经把自己认知范围内的问题都解决掉了，而且业内也有更好解决方案的时候，我们没必要追赶，而是应该去洞察技术开发过程中还有什么问题需要被解决。解决了新的问题才回有新的价值，但不要为了解决问题而创造问题！</p>
+<h3 id="站在公司角度的选择"><a href="#站在公司角度的选择" class="headerlink" title="站在公司角度的选择"></a>站在公司角度的选择</h3><p>选择不投入，这是我代表公司做出的选择，因为在公司层面是需要考虑投入与产出比的，如果不能为公司带来更多价值，我会果断选项停止投入。但这不代表个人行为的停止投入，胡昕在这个项目上也注入了大量的心血，我们会把 koot 当做玩技术的一个途径，基于它仍然可以做各种尝试。</p>
+<h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><p>2016 年 8 月 17 日在猎豹移动的 Gitlab 上提交了第一次代码<br>贡献者：我、胡昕、孙驰、李阳、张攀</p>
+<p>2017 年 7 月 3 日在 <a target="_blank" rel="noopener" href="https://github.com/cmux/koot/tree/9783c9cda276fd6410e94497e282c185c80823c8">GitHub 上提交了第一次代码</a><br>贡献者：我、胡昕、马振雨、王一奇、陈钦洋</p>
+<p>2018 年 8 月 8 日在 NPM 上提交了<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/koot/v/0.0.1">第一个 koot 包</a></p>
+<p>2020 年 5 月 15 日 在腾讯云 采访 koot 在 serverless 上的实践<br><a target="_blank" rel="noopener" href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
+<p>2020 年 7 月 9 日 在 ServerlessDay · China 大会上的 koot 案例分享<br><a target="_blank" rel="noopener" href="https://serverlesscloud.cn/blog/2020-07-09-serverlessdays-tencent-2">https://serverlesscloud.cn/blog/2020-07-09-serverlessdays-tencent-2</a></p>
+<p>2017 年 11 月 猎豹十佳技术文章《2017 年的 WEB 前端开发 - 单页面终于嫁给了多页面》<br><a target="_blank" rel="noopener" href="https://twiki.cmcm.com/pages/viewpage.action?pageId=11339894">https://twiki.cmcm.com/pages/viewpage.action?pageId=11339894</a></p>
+<h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>猎豹移动官网<br><a target="_blank" rel="noopener" href="https://www.cmcm.com/">https://www.cmcm.com</a></p>
+<p>Bitrue 交易所<br><a target="_blank" rel="noopener" href="https://www.bitrue.com/">https://www.bitrue.com</a></p>
 
       
     </div>
     <div class="article-more less">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2021-02-07</span>
-      <!-- <a data-url="http://me.websage.com/2021/02/07/koot-history/" data-id="cl1hzyw5e000140tluyc5i4xr" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2021/02/07/koot-history/" data-id="clbvzdqrq000263cheda8ak42" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -219,9 +178,8 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     
     <div class="article-entry less" itemprop="articleBody">
       
-        <p><img src="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg" alt=""></p>
-<h2 id="采访实录"><a class="markdownIt-Anchor" href="#采访实录"></a> 采访实录</h2>
-<p><em>问：董老师您好，请简要介绍一下您所在的团队。</em></p>
+        <p><img src="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg"></p>
+<h2 id="采访实录"><a href="#采访实录" class="headerlink" title="采访实录"></a>采访实录</h2><p><em>问：董老师您好，请简要介绍一下您所在的团队。</em></p>
 <p>答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。</p>
 <p><em>问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？</em></p>
 <p>答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构），把 SSR (Server Side Rendering) 和 CSR (Client Side Render) 的优点结合，让用户浏览网页的时候不管是首屏还是随后操作的其他页都能更快的展示响应。</p>
@@ -245,7 +203,7 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
 <p>前端的 SSR 一定会考虑是否需要 Isomorphic，如果小团队建议先从比较流行的框架着手尝试，如 Next.js、Nuxt.js 等，也推荐体验我们的 Koot.js。Next.js、Nuxt.js 这些框架在腾讯云 Serverless Framework 都现成的组件支持，Koot.js 也可以用我们的方案。无论是 SSR 还是 Serverless，最好都是基于现有框架，从零开始搭建框架坑太多了，如果没有足够业务支持不要浪费精力自己去做框架，学会一个框架的成本要远小于维护一个框架的成本。</p>
 <p>采访人：王俊杰</p>
 <blockquote>
-<p>More: <a href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview" target="_blank" rel="noopener">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
+<p>More: <a target="_blank" rel="noopener" href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
 </blockquote>
 
       
@@ -253,10 +211,10 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     <div class="article-more less">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2020-05-15</span>
-      <!-- <a data-url="http://me.websage.com/2020/05/15/serverless-interview/" data-id="cl1hzyw5h000340tlif5zp8sw" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2020/05/15/serverless-interview/" data-id="clbvzdqrq000363ch3mffbqq8" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分享/">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -291,27 +249,21 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     <div class="article-entry less" itemprop="articleBody">
       
         <p>super-project 是 koot.js 的前身。</p>
-<h2 id="目录-apps-说明"><a class="markdownIt-Anchor" href="#目录-apps-说明"></a> 目录 /apps 说明</h2>
-<p>apps下承载一下子项目，每个子项目可能有自己的前端和后端。</p>
+<h2 id="目录-x2F-apps-说明"><a href="#目录-x2F-apps-说明" class="headerlink" title="目录 &#x2F;apps 说明"></a>目录 &#x2F;apps 说明</h2><p>apps下承载一下子项目，每个子项目可能有自己的前端和后端。</p>
 <ul>
 <li>api 接口服务模板</li>
 <li>doc React同构模板 &amp; 文档站点</li>
 <li>www EJS网站模板</li>
 <li>saas 第三方服务功能模板</li>
 </ul>
-<h2 id="debug"><a class="markdownIt-Anchor" href="#debug"></a> Debug</h2>
-<p>使用debug模块做控制台输出，类型：info|error|debug|log</p>
-<h2 id="log"><a class="markdownIt-Anchor" href="#log"></a> Log</h2>
-<p>之前的没有记载，从现在开始记录</p>
+<h2 id="Debug"><a href="#Debug" class="headerlink" title="Debug"></a>Debug</h2><p>使用debug模块做控制台输出，类型：info|error|debug|log</p>
+<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p>之前的没有记载，从现在开始记录</p>
 <ul>
-<li>
-<p>2017-11-16</p>
-<p>移除/apps/saas 项目，使用sp-service-wx \sp-service-* 代替，<br>
-原因是用域名方式在服务器本机内请求效率没有程序内请求效率高。</p>
+<li><p>2017-11-16</p>
+<p> 移除&#x2F;apps&#x2F;saas 项目，使用sp-service-wx \sp-service-* 代替，<br> 原因是用域名方式在服务器本机内请求效率没有程序内请求效率高。</p>
 </li>
-<li>
-<p>2017-12-1</p>
-<p>修复了sp-css-import引用1个classname时，会多一个空格bug。</p>
+<li><p>2017-12-1</p>
+<p>  修复了sp-css-import引用1个classname时，会多一个空格bug。</p>
 </li>
 </ul>
 
@@ -320,10 +272,10 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     <div class="article-more less">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2018-04-19</span>
-      <!-- <a data-url="http://me.websage.com/2018/04/19/sp-boilerplate/" data-id="cl1hzyw5j000440tlis164ele" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2018/04/19/sp-boilerplate/" data-id="clbvzdqrr000463chbeku0s6s" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -357,79 +309,57 @@ css-loader 和 style-loader 在 webpack 处理的样式是可以满足日常需�
     
     <div class="article-entry less" itemprop="articleBody">
       
-        <h2 id="引言"><a class="markdownIt-Anchor" href="#引言"></a> 引言</h2>
-<p>WEB 前端技术早已今非昔比，可谓是<code>大前端</code>。从网页上的炫酷效果，到页面的布局，再到服务端模板渲染和数据接口功能，WEB 前端技术都可以轻松搞定。甚至利用 JavaScript 可以编写很多跨界的项目，如游戏开发（<a href="http://www.cocos.com/" target="_blank" rel="noopener">Cocos2d</a>\<a href="https://unity3d.com/cn/" target="_blank" rel="noopener">Unity3D</a>）、机器学习（<a href="http://cs.stanford.edu/people/karpathy/convnetjs/" target="_blank" rel="noopener">ConvNetJS</a>）、跨平台应用（<a href="https://facebook.github.io/react-native/" target="_blank" rel="noopener">ReactNative</a>）等等。</p>
-<p>如今<a href="http://jquery.com/" target="_blank" rel="noopener">jQuery</a>已成是一个优秀的古老的存在，前端技术日新月异，如果你是前端开发者，不知道：<a href="https://facebook.github.io/react/" target="_blank" rel="noopener">React</a>、<a href="http://vuejs.org/" target="_blank" rel="noopener">Vue</a>、<a href="https://angularjs.org/" target="_blank" rel="noopener">Angular</a>、<a href="https://webpack.js.org/" target="_blank" rel="noopener">Webpack</a>、<a href="https://gulpjs.com/" target="_blank" rel="noopener">Gulp</a>、<a href="http://sass-lang.com/" target="_blank" rel="noopener">Sass</a>、<a href="http://lesscss.org/" target="_blank" rel="noopener">LESS</a>、<a href="http://postcss.org/" target="_blank" rel="noopener">PostCSS</a>、<a href="http://nodejs.cn/" target="_blank" rel="noopener">NodeJS</a>、<a href="http://koajs.com/" target="_blank" rel="noopener">Koa</a>、<a href="http://expressjs.com/" target="_blank" rel="noopener">Express</a>、<a href="http://mochajs.org/" target="_blank" rel="noopener">Mocha</a>、<a href="https://yarnpkg.com/" target="_blank" rel="noopener">Yarn</a>、<a href="http://redux.js.org/" target="_blank" rel="noopener">Redux</a>、<a href="">Middleware</a>、ES6/7、<a href="http://www.typescriptlang.org/" target="_blank" rel="noopener">TS</a>、<a href="http://coffee-script.org/" target="_blank" rel="noopener">Coffee</a>、<a href="http://babeljs.cn/" target="_blank" rel="noopener">Babel</a>等等这些词，那你真该好好学习一番了（说的不全，就这个意思吧）。</p>
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>WEB 前端技术早已今非昔比，可谓是<code>大前端</code>。从网页上的炫酷效果，到页面的布局，再到服务端模板渲染和数据接口功能，WEB 前端技术都可以轻松搞定。甚至利用 JavaScript 可以编写很多跨界的项目，如游戏开发（<a target="_blank" rel="noopener" href="http://www.cocos.com/">Cocos2d</a>\<a target="_blank" rel="noopener" href="https://unity3d.com/cn/">Unity3D</a>）、机器学习（<a target="_blank" rel="noopener" href="http://cs.stanford.edu/people/karpathy/convnetjs/">ConvNetJS</a>）、跨平台应用（<a target="_blank" rel="noopener" href="https://facebook.github.io/react-native/">ReactNative</a>）等等。</p>
+<p>如今<a target="_blank" rel="noopener" href="http://jquery.com/">jQuery</a>已成是一个优秀的古老的存在，前端技术日新月异，如果你是前端开发者，不知道：<a target="_blank" rel="noopener" href="https://facebook.github.io/react/">React</a>、<a target="_blank" rel="noopener" href="http://vuejs.org/">Vue</a>、<a target="_blank" rel="noopener" href="https://angularjs.org/">Angular</a>、<a target="_blank" rel="noopener" href="https://webpack.js.org/">Webpack</a>、<a target="_blank" rel="noopener" href="https://gulpjs.com/">Gulp</a>、<a target="_blank" rel="noopener" href="http://sass-lang.com/">Sass</a>、<a target="_blank" rel="noopener" href="http://lesscss.org/">LESS</a>、<a target="_blank" rel="noopener" href="http://postcss.org/">PostCSS</a>、<a target="_blank" rel="noopener" href="http://nodejs.cn/">NodeJS</a>、<a target="_blank" rel="noopener" href="http://koajs.com/">Koa</a>、<a target="_blank" rel="noopener" href="http://expressjs.com/">Express</a>、<a target="_blank" rel="noopener" href="http://mochajs.org/">Mocha</a>、<a target="_blank" rel="noopener" href="https://yarnpkg.com/">Yarn</a>、<a target="_blank" rel="noopener" href="http://redux.js.org/">Redux</a>、<a href="">Middleware</a>、ES6&#x2F;7、<a target="_blank" rel="noopener" href="http://www.typescriptlang.org/">TS</a>、<a target="_blank" rel="noopener" href="http://coffee-script.org/">Coffee</a>、<a target="_blank" rel="noopener" href="http://babeljs.cn/">Babel</a>等等这些词，那你真该好好学习一番了（说的不全，就这个意思吧）。</p>
 <p>就本文而言，单说说网站开发这块的事儿，看看 2017 年的 WEB 技术能做到什么程度。</p>
-<h2 id="技术的初衷就是解决问题"><a class="markdownIt-Anchor" href="#技术的初衷就是解决问题"></a> 技术的初衷就是解决问题</h2>
-<p>问题的存在与技术的存在不像“先有鸡还是先有蛋”的问题那么纠结，这必然是先有问题，再有对应的技术解决此问题的。而问题的产生往往是因为我们追逐着完美，想要更优秀。在网站开发这个领域同样如此，网页是人机交互的入口，我们追求的正是响应的速度、展现的效果和使用的体验。</p>
-<h2 id="那么问题就来了先只抛砖后面有讲解"><a class="markdownIt-Anchor" href="#那么问题就来了先只抛砖后面有讲解"></a> 那么问题就来了（先只抛砖，后面有讲解）</h2>
-<h3 id="一-如何让网页响应的速度更快呢"><a class="markdownIt-Anchor" href="#一-如何让网页响应的速度更快呢"></a> 一、如何让网页响应的速度更快呢？</h3>
-<p><code>现有情况</code></p>
+<h2 id="技术的初衷就是解决问题"><a href="#技术的初衷就是解决问题" class="headerlink" title="技术的初衷就是解决问题"></a>技术的初衷就是解决问题</h2><p>问题的存在与技术的存在不像“先有鸡还是先有蛋”的问题那么纠结，这必然是先有问题，再有对应的技术解决此问题的。而问题的产生往往是因为我们追逐着完美，想要更优秀。在网站开发这个领域同样如此，网页是人机交互的入口，我们追求的正是响应的速度、展现的效果和使用的体验。</p>
+<h2 id="那么问题就来了（先只抛砖，后面有讲解）"><a href="#那么问题就来了（先只抛砖，后面有讲解）" class="headerlink" title="那么问题就来了（先只抛砖，后面有讲解）"></a>那么问题就来了（先只抛砖，后面有讲解）</h2><h3 id="一、如何让网页响应的速度更快呢？"><a href="#一、如何让网页响应的速度更快呢？" class="headerlink" title="一、如何让网页响应的速度更快呢？"></a>一、如何让网页响应的速度更快呢？</h3><p><code>现有情况</code></p>
 <p><strong>1.传统的多页面（服务端渲染 HTML）方式</strong></p>
-<p>把公共部分的 JS/CSS 引用到页面里，首次加载会下载额外的资源文件。<br>
-切换页面重定向的时候，整体页面刷新，很多资源被 2 次下载，并且有一段时间页面空白。</p>
+<p>把公共部分的 JS&#x2F;CSS 引用到页面里，首次加载会下载额外的资源文件。<br>切换页面重定向的时候，整体页面刷新，很多资源被 2 次下载，并且有一段时间页面空白。</p>
 <p>问题：下载了额外的资源文件，页面重定向会有空白间断。</p>
 <p><strong>2.单页面 WEB 应用（SPA）方式</strong></p>
-<p>把页面的基础 HTML 壳子和页面所需要的 JS/CSS 是先下载到浏览器端，再进行 HTML 渲染，整个网页必须在引用的 JS 文件下载后，n 毫秒后显示。（即使做了 AMD 方式的分包，可以优化节省下载时间，但无法根本解决页面展现  依赖 JS 下载完成问题）</p>
+<p>把页面的基础 HTML 壳子和页面所需要的 JS&#x2F;CSS 是先下载到浏览器端，再进行 HTML 渲染，整个网页必须在引用的 JS 文件下载后，n 毫秒后显示。（即使做了 AMD 方式的分包，可以优化节省下载时间，但无法根本解决页面展现  依赖 JS 下载完成问题）</p>
 <p>问题：网页的整体显示依赖于 JS 是文件下载时间。</p>
 <p><code>理想情况</code></p>
-<p>根据当前 URL 请求，返回对应的（完整内容）HTML 和（当前页面所需要的）CSS 以及（基础功能和当前业务）JS。<br>
-其中 CSS 放到页内，与 HTML 一同下载，会省了 1 条下载线程让给其他资源。（与传统方式不同  的是 CSS 没有多余的部分）<br>
-其中 JS 放到最后加载，不影响网页首屏的显示。<br>
-后续的所有页面（与本站相关的网页）都是跟进用户的动作按需加载，做异步的 JS 处理。<br>
-后续加载的 JS 不会重复下载。</p>
+<p>根据当前 URL 请求，返回对应的（完整内容）HTML 和（当前页面所需要的）CSS 以及（基础功能和当前业务）JS。<br>其中 CSS 放到页内，与 HTML 一同下载，会省了 1 条下载线程让给其他资源。（与传统方式不同  的是 CSS 没有多余的部分）<br>其中 JS 放到最后加载，不影响网页首屏的显示。<br>后续的所有页面（与本站相关的网页）都是跟进用户的动作按需加载，做异步的 JS 处理。<br>后续加载的 JS 不会重复下载。</p>
 <p>总结：在首次打开页面时候排除所有可能排除的下载内容，让网页瘦成一道闪电。</p>
-<h3 id="二-假如上面的理想情况实现了后续的内容全部是-js-加载渲染那么-seo-该怎么办"><a class="markdownIt-Anchor" href="#二-假如上面的理想情况实现了后续的内容全部是-js-加载渲染那么-seo-该怎么办"></a> 二、假如上面的理想情况实现了，后续的内容全部是 JS 加载渲染，那么 SEO 该怎么办？</h3>
-<p><code>现有情况</code></p>
+<h3 id="二、假如上面的理想情况实现了，后续的内容全部是-JS-加载渲染，那么-SEO-该怎么办？"><a href="#二、假如上面的理想情况实现了，后续的内容全部是-JS-加载渲染，那么-SEO-该怎么办？" class="headerlink" title="二、假如上面的理想情况实现了，后续的内容全部是 JS 加载渲染，那么 SEO 该怎么办？"></a>二、假如上面的理想情况实现了，后续的内容全部是 JS 加载渲染，那么 SEO 该怎么办？</h3><p><code>现有情况</code></p>
 <p><strong>1.传统的多页面（服务端渲染 HTML）方式</strong></p>
 <p>有较好的 SEO 能力，可以在 HTML 渲染时候指定多处 SEO 优化内容。</p>
 <p><strong>2.单页面 WEB 应用（SPA）方式</strong></p>
 <p>几乎丧失了多页面网站的 SEO 能力，也会有一些特定的方法解决，但效果跟多页面网站完全不是一个 level 的。</p>
 <p><code>理想情况</code></p>
-<p>我还没有更好的办法超越“多页面网站”的 SEO 能力，那就做到和它一样的 level。<br>
-要做到 2 点：</p>
-<p>a) URL 必须返回对应的 HTML 内容<br>
-b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）</p>
-<h3 id="三-假如上面的理想情况实现了那么作为一家国际化的公司多语言是个必不可少的功能该如何实现呢"><a class="markdownIt-Anchor" href="#三-假如上面的理想情况实现了那么作为一家国际化的公司多语言是个必不可少的功能该如何实现呢"></a> 三、假如上面的理想情况实现了，那么作为一家国际化的公司多语言是个必不可少的功能，该如何实现呢？</h3>
-<p><code>中小型项目</code></p>
+<p>我还没有更好的办法超越“多页面网站”的 SEO 能力，那就做到和它一样的 level。<br>要做到 2 点：</p>
+<p>a) URL 必须返回对应的 HTML 内容<br>b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）</p>
+<h3 id="三、假如上面的理想情况实现了，那么作为一家国际化的公司多语言是个必不可少的功能，该如何实现呢？"><a href="#三、假如上面的理想情况实现了，那么作为一家国际化的公司多语言是个必不可少的功能，该如何实现呢？" class="headerlink" title="三、假如上面的理想情况实现了，那么作为一家国际化的公司多语言是个必不可少的功能，该如何实现呢？"></a>三、假如上面的理想情况实现了，那么作为一家国际化的公司多语言是个必不可少的功能，该如何实现呢？</h3><p><code>中小型项目</code></p>
 <p>一般会编写国际化的语言变量文件，根据浏览器的设置或者用户的选择，调用不同的语言变量文件。目录结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">--i18n</span><br><span class="line">    |</span><br><span class="line">    +---zh.js</span><br><span class="line">    |</span><br><span class="line">    +---en.js</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">--i18n</span><br><span class="line">    |</span><br><span class="line">    +---zh.js</span><br><span class="line">    |</span><br><span class="line">    +---en.js</span><br></pre></td></tr></table></figure>
+
 <p><code>大型项目</code></p>
-<p>与中小型项目不同的是，大型项目有较多的语言变量，如果一次性加载导致速度慢，而且很多当时用不到的地方会产生流量的浪费。<br>
-这时候我们会做拆分，根据功能分支，做按需加载。目录结构如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">--i18n</span><br><span class="line">    |</span><br><span class="line">    +---feature-1</span><br><span class="line">    |   |</span><br><span class="line">    |   +---zh.js</span><br><span class="line">    |   |</span><br><span class="line">    |   +---en.js</span><br><span class="line">    |</span><br><span class="line">    |</span><br><span class="line">    +---feature-2</span><br><span class="line">        |</span><br><span class="line">        +---zh.js</span><br><span class="line">        |</span><br><span class="line">        +---en.js</span><br></pre></td></tr></table></figure>
+<p>与中小型项目不同的是，大型项目有较多的语言变量，如果一次性加载导致速度慢，而且很多当时用不到的地方会产生流量的浪费。<br>这时候我们会做拆分，根据功能分支，做按需加载。目录结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">--i18n</span><br><span class="line">    |</span><br><span class="line">    +---feature-1</span><br><span class="line">    |   |</span><br><span class="line">    |   +---zh.js</span><br><span class="line">    |   |</span><br><span class="line">    |   +---en.js</span><br><span class="line">    |</span><br><span class="line">    |</span><br><span class="line">    +---feature-2</span><br><span class="line">        |</span><br><span class="line">        +---zh.js</span><br><span class="line">        |</span><br><span class="line">        +---en.js</span><br></pre></td></tr></table></figure>
+
 <p>另外，还一种方式跟据语言包种类，用 Webpack 根据语音种类，打出多套程序代码进行部署，比如要支持 3 个语言，那么就生成 3 套部署代码，线上跑 3 个网站程序。这种方式是性能最好的。</p>
-<h3 id="四-假如上面的多语言也实现了公司做-android-平台的项目那么多我们前端同学能做什么呢"><a class="markdownIt-Anchor" href="#四-假如上面的多语言也实现了公司做-android-平台的项目那么多我们前端同学能做什么呢"></a> 四、假如上面的多语言也实现了，公司做 Android 平台的项目那么多，我们前端同学能做什么呢？</h3>
-<p><code>PWA</code> <a href="https://developers.google.com/web/progressive-web-apps/" target="_blank" rel="noopener">点击了解</a></p>
+<h3 id="四、假如上面的多语言也实现了，公司做-Android-平台的项目那么多，我们前端同学能做什么呢？"><a href="#四、假如上面的多语言也实现了，公司做-Android-平台的项目那么多，我们前端同学能做什么呢？" class="headerlink" title="四、假如上面的多语言也实现了，公司做 Android 平台的项目那么多，我们前端同学能做什么呢？"></a>四、假如上面的多语言也实现了，公司做 Android 平台的项目那么多，我们前端同学能做什么呢？</h3><p><code>PWA</code> <a target="_blank" rel="noopener" href="https://developers.google.com/web/progressive-web-apps/">点击了解</a></p>
 <p>PWA 是 Google 推出的渐进式 Web 应用程序，让 H5 在 Android 平台上增加了很多类似 APP 的功能，如推送、像应用一样放到桌面、离线使用等。</p>
-<p>那么前端同学就可以利用 Google 的 API 来加强 H5 的体验。在实现的时候只是多了一些配置代码和对数据请求的特殊处理。<br>
-离线的核心技术就是 ServiceWorker。从开发工作量的角度来说，并不会有太多的额外工作量，<br>
-自己可以基于 NodeJS 来实现一套工具自动完成这件事儿。</p>
-<p><code>AMP</code> <a href="https://www.ampproject.org/learn/overview/" target="_blank" rel="noopener">点击了解</a></p>
-<p>AMP 也是 Google 推出的增强网页体验和增强搜索能力的方案。有点类似小程序，<br>
-严格要求安装他的语法格式编写网页。不一样的是他自带一个 JS 库，可以直接在浏览器上运行。</p>
-<p>前端同学可以利用 AMP 的语法做出让用户更高效浏览的网站，特别适用于新闻类型的站点，Google 搜索会对 AMP 实现的网站有专项推荐。<br>
-从开发工作量的角度来说，会增加一些工作量，实现需要用到 AMP 特定的语法规范。</p>
-<h3 id="五-假如上面的多语言也实现了那么我们的开发效率能不能更高"><a class="markdownIt-Anchor" href="#五-假如上面的多语言也实现了那么我们的开发效率能不能更高"></a> 五、假如上面的多语言也实现了，那么我们的开发效率能不能更高？</h3>
-<p>说到这里，就不做比较了，前端攻城狮们或可以说“心灵手巧”，或可以说“懒到极致”，<br>
-近几年是不断的：发明工具-&gt;重新发明工具-&gt;重新发明工具-&gt;重新…</p>
+<p>那么前端同学就可以利用 Google 的 API 来加强 H5 的体验。在实现的时候只是多了一些配置代码和对数据请求的特殊处理。<br>离线的核心技术就是 ServiceWorker。从开发工作量的角度来说，并不会有太多的额外工作量，<br>自己可以基于 NodeJS 来实现一套工具自动完成这件事儿。</p>
+<p><code>AMP</code> <a target="_blank" rel="noopener" href="https://www.ampproject.org/learn/overview/">点击了解</a></p>
+<p>AMP 也是 Google 推出的增强网页体验和增强搜索能力的方案。有点类似小程序，<br>严格要求安装他的语法格式编写网页。不一样的是他自带一个 JS 库，可以直接在浏览器上运行。</p>
+<p>前端同学可以利用 AMP 的语法做出让用户更高效浏览的网站，特别适用于新闻类型的站点，Google 搜索会对 AMP 实现的网站有专项推荐。<br>从开发工作量的角度来说，会增加一些工作量，实现需要用到 AMP 特定的语法规范。</p>
+<h3 id="五、假如上面的多语言也实现了，那么我们的开发效率能不能更高？"><a href="#五、假如上面的多语言也实现了，那么我们的开发效率能不能更高？" class="headerlink" title="五、假如上面的多语言也实现了，那么我们的开发效率能不能更高？"></a>五、假如上面的多语言也实现了，那么我们的开发效率能不能更高？</h3><p>说到这里，就不做比较了，前端攻城狮们或可以说“心灵手巧”，或可以说“懒到极致”，<br>近几年是不断的：发明工具-&gt;重新发明工具-&gt;重新发明工具-&gt;重新…</p>
 <p>工具会减少重复劳动的好东西，必不可少，这里我会从多个角度分析，如何提高前端开发效率。</p>
 <p><code>跨职能联调</code></p>
 <p><strong>1.与服务端开发同学联调</strong></p>
 <p>你是否工作中常听见：“他的接口还没好，等接口呢”、“页面写好了，就差套模板了”、“服务端同学又改我代码”、“等服务端同学帮我搭建环境”…</p>
 <p>这些问题可以通过与服务端同学的配合方式上解决，前后端开发完全分离，让服务端同学只开发接口，更专注于数据业务逻辑和接口性能。让前端开发开发网站的非数据库部分，包括了服务端渲染和网页页面。前端同学用 NodeJS 技术做服务端开发，代码部署到与服务端代码相同的机房，这样既不会影响网站速度，又不会导致前后端开发互相影响。仅基于接口的联调会更容易测试、排除问题。（阿里早几年就已经开始这样做了）</p>
 <p><strong>2.与测试同学的配合</strong></p>
-<p>基于上述的开发模式，接口可以加上单元测试，避免一些低级错误的发生。<br>
-前端同学自己的写的逻辑性代码也可以加上“单元测试”（有精力的情况下），<br>
-包括页面的交互上操作也可以加上“行为测试”（有精力的情况下）。<br>
-这样在交 QA 同学的时候就会减少很多低级错误了。</p>
+<p>基于上述的开发模式，接口可以加上单元测试，避免一些低级错误的发生。<br>前端同学自己的写的逻辑性代码也可以加上“单元测试”（有精力的情况下），<br>包括页面的交互上操作也可以加上“行为测试”（有精力的情况下）。<br>这样在交 QA 同学的时候就会减少很多低级错误了。</p>
 <p><code>团队开发有规范</code></p>
 <ol>
 <li>统一用 ES、TS、Coffee 等这些比较先进的语法</li>
 <li>CSS 使用 LESS\Sass 等</li>
 <li>统一编码风格，一个.eslintrc 配置文件（ESLint）就可以搞定</li>
-<li>组件化开发：React\Vue…</li>
+<li>组件化开发：React\Vue...</li>
 <li>适当的加上 git hook，做 code review</li>
 </ol>
 <p>等等这些内容现在的前端开发比较常用，不细说了。</p>
@@ -442,82 +372,54 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
 <li>NodeJS 进程管理工具：PM2</li>
 <li>不得不提的包管理工具：NPM(CNPM)\Yarn</li>
 </ol>
-<h3 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结：</h3>
-<ol>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ol>
 <li>减少沟通成本，其实大多程序猿的 coding 速度还很快的。</li>
 <li>规范和工具都是围绕着 “Don’t repeat yourself!” 这个思路来执行的。</li>
 </ol>
-<h2 id="把理想变成现实"><a class="markdownIt-Anchor" href="#把理想变成现实"></a> 把理想变成现实</h2>
-<p>上述的种种已实现并整理成框架，名为“super-project”，模板项目：<a href="https://github.com/websage-team/sp-boilerplate" target="_blank" rel="noopener">sp-boilerplate</a><br>
-框架核心：<a href="https://github.com/websage-team/super-project" target="_blank" rel="noopener">super-project</a><br>
-引用技术：Koa+React+Redux+Webpack（可以使用类似的技术替换，如：Express+Vue+Vuex+Browserify）</p>
+<h2 id="把理想变成现实"><a href="#把理想变成现实" class="headerlink" title="把理想变成现实"></a>把理想变成现实</h2><p>上述的种种已实现并整理成框架，名为“super-project”，模板项目：<a target="_blank" rel="noopener" href="https://github.com/websage-team/sp-boilerplate">sp-boilerplate</a><br>框架核心：<a target="_blank" rel="noopener" href="https://github.com/websage-team/super-project">super-project</a><br>引用技术：Koa+React+Redux+Webpack（可以使用类似的技术替换，如：Express+Vue+Vuex+Browserify）</p>
 <p>下面简要简介了一些技术点实现原理，涉及内容较多，不能面面俱到，想深入了解的同学请点击链接查看源码，一探究竟，或直接找我沟通。</p>
-<h3 id="一-如何让网页响应的速度更快呢让网页瘦成一道闪电"><a class="markdownIt-Anchor" href="#一-如何让网页响应的速度更快呢让网页瘦成一道闪电"></a> 一、如何让网页响应的速度更快呢？让网页瘦成一道闪电</h3>
-<ol>
-<li>
-<p>准备好一份精简的 HTML 框架(跟进业务精简，酌情处理)。</p>
+<h3 id="一、如何让网页响应的速度更快呢？让网页瘦成一道闪电"><a href="#一、如何让网页响应的速度更快呢？让网页瘦成一道闪电" class="headerlink" title="一、如何让网页响应的速度更快呢？让网页瘦成一道闪电"></a>一、如何让网页响应的速度更快呢？让网页瘦成一道闪电</h3><ol>
+<li><p>准备好一份精简的 HTML 框架(跟进业务精简，酌情处理)。</p>
 </li>
-<li>
-<p>利用 React+React-Router 服务端渲染的能力（自研发 Koa 服务端渲染 React 功能中间件<a href="https://github.com/websage-team/super-project/tree/master/src/ReactApp" target="_blank" rel="noopener">super-project/ReactApp</a>），在服务端执行 React 代码，渲染出当 URL 请求对应的 HTML 片段。</p>
+<li><p>利用 React+React-Router 服务端渲染的能力（自研发 Koa 服务端渲染 React 功能中间件<a target="_blank" rel="noopener" href="https://github.com/websage-team/super-project/tree/master/src/ReactApp">super-project&#x2F;ReactApp</a>），在服务端执行 React 代码，渲染出当 URL 请求对应的 HTML 片段。</p>
 </li>
-<li>
-<p>用样式收集器（自研发<a href="https://github.com/websage-team/sp-css-import" target="_blank" rel="noopener">sp-css-import</a>），收集到当前 HTML 片段里（React 组件）需要的 CSS。<br>
-样式收集器原理，利用组件化开发的方式，把每个组件对应的 CSS 独立出来，用于引用收集，利用 React 渲染机制，在用户访问页面时，把用到的组件的 CSS 注入到收集器中，收集器在分类、压缩 CSS。在网页内运行期间，页面内部组件会根据用户的操作发生改变，组件使用次数会有全局的监听，根据页面内使用到的组件动态调整页内<code>&lt;Style /&gt;</code>标签的内容，标签内容实时对应了当前组件的 CSS 需求。参考下面图示：<br>
-<img src="/assets/css-counter-note.png" alt=""></p>
+<li><p>用样式收集器（自研发<a target="_blank" rel="noopener" href="https://github.com/websage-team/sp-css-import">sp-css-import</a>），收集到当前 HTML 片段里（React 组件）需要的 CSS。<br>样式收集器原理，利用组件化开发的方式，把每个组件对应的 CSS 独立出来，用于引用收集，利用 React 渲染机制，在用户访问页面时，把用到的组件的 CSS 注入到收集器中，收集器在分类、压缩 CSS。在网页内运行期间，页面内部组件会根据用户的操作发生改变，组件使用次数会有全局的监听，根据页面内使用到的组件动态调整页内<code>&lt;Style /&gt;</code>标签的内容，标签内容实时对应了当前组件的 CSS 需求。参考下面图示：<br><img src="/assets/css-counter-note.png"></p>
 </li>
-<li>
-<p>利用 Webpack 的打包（AMD、require.ensure）能力，把 JS 根据页面拆分，产出 1 个入口文件和 N 个页面相关的 JS 文件，这样入口文件会根据当前的 URL 判断加载哪些页面逻辑相关的 JS 文件。</p>
+<li><p>利用 Webpack 的打包（AMD、require.ensure）能力，把 JS 根据页面拆分，产出 1 个入口文件和 N 个页面相关的 JS 文件，这样入口文件会根据当前的 URL 判断加载哪些页面逻辑相关的 JS 文件。</p>
 </li>
-<li>
-<p>最后把收集好的 CSS 插入到 HTML 框架头部，把 React 渲染好的 HTML 插入到内容体，把入口 JS 文件链接放到页尾，返回给浏览器。</p>
+<li><p>最后把收集好的 CSS 插入到 HTML 框架头部，把 React 渲染好的 HTML 插入到内容体，把入口 JS 文件链接放到页尾，返回给浏览器。</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">+------------------------------------------------+</span><br><span class="line">|   HTML 精简结构                                 |</span><br><span class="line">|                                                |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |       CSS (页内 CSS &lt;style&gt;)    |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |       React-HTML               |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |      JS Link (只有 JS 入口文件)  |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|                                                |</span><br><span class="line">+------------------------------------------------+</span><br></pre></td></tr></table></figure>
-<h3 id="二-那么-seo-该怎么办让网页首次打开带有完整的-html-代码"><a class="markdownIt-Anchor" href="#二-那么-seo-该怎么办让网页首次打开带有完整的-html-代码"></a> 二、那么 SEO 该怎么办？让网页首次打开带有完整的 HTML 代码</h3>
-<ol>
-<li>
-<p>主体内容的完整性在上一个问题解决的同时（步骤 2）也被解决了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">+------------------------------------------------+</span><br><span class="line">|   HTML 精简结构                                 |</span><br><span class="line">|                                                |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |       CSS (页内 CSS &lt;style&gt;)    |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |       React-HTML               |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|       |      JS Link (只有 JS 入口文件)  |       |</span><br><span class="line">|       +--------------------------------+       |</span><br><span class="line">|                                                |</span><br><span class="line">+------------------------------------------------+</span><br></pre></td></tr></table></figure>
+
+<h3 id="二、那么-SEO-该怎么办？让网页首次打开带有完整的-HTML-代码"><a href="#二、那么-SEO-该怎么办？让网页首次打开带有完整的-HTML-代码" class="headerlink" title="二、那么 SEO 该怎么办？让网页首次打开带有完整的 HTML 代码"></a>二、那么 SEO 该怎么办？让网页首次打开带有完整的 HTML 代码</h3><ol>
+<li><p>主体内容的完整性在上一个问题解决的同时（步骤 2）也被解决了。</p>
 </li>
-<li>
-<p>自定义的 meta 其实是与 react 逻辑脱离的，写前端业务的同学不容易接触到 NodeJS 相关代码。我的解决方案是在 React 组件上扩展了 onServerRender 的事件，当服务端运行 React 逻辑的时候，会自动检测该事件并执行，在 onServerRender 事件里暴露自定义 meta 的相关方法，从而为前端开发者开放了编写 meta 的能力。onServerRender 事件里还暴露了一些自定义 HTML 的方法，以便扩展 HTML 内容。</p>
+<li><p>自定义的 meta 其实是与 react 逻辑脱离的，写前端业务的同学不容易接触到 NodeJS 相关代码。我的解决方案是在 React 组件上扩展了 onServerRender 的事件，当服务端运行 React 逻辑的时候，会自动检测该事件并执行，在 onServerRender 事件里暴露自定义 meta 的相关方法，从而为前端开发者开放了编写 meta 的能力。onServerRender 事件里还暴露了一些自定义 HTML 的方法，以便扩展 HTML 内容。</p>
 </li>
 </ol>
 <p>注：网上流行的说法是把 React Server Render 叫成“同构”，为了让大家更容易理解这种方式，我画了一个访问流程图示例：</p>
-<p><img src="/assets/isomorphic-flow.png" alt=""></p>
+<p><img src="/assets/isomorphic-flow.png"></p>
 <p>说明：</p>
 <ol>
-<li>
-<p>多页面站点浏览方式<br>
-用户直接访问目标页面，页面 A 与页面 B 直接是跳转 URL 的方式（整体刷新）。</p>
+<li><p>多页面站点浏览方式<br>用户直接访问目标页面，页面 A 与页面 B 直接是跳转 URL 的方式（整体刷新）。</p>
 </li>
-<li>
-<p>单页面站点浏览方式<br>
-不管用户访问的是哪个 URL，都返回相同的框架页内容（无内容），在浏览器端用 JS 判断跳转显示目标页面，后续的页面跳转，都是 JS 做的，无需刷新页面。</p>
+<li><p>单页面站点浏览方式<br>不管用户访问的是哪个 URL，都返回相同的框架页内容（无内容），在浏览器端用 JS 判断跳转显示目标页面，后续的页面跳转，都是 JS 做的，无需刷新页面。</p>
 </li>
-<li>
-<p>同构站点浏览方式<br>
-用户直接访问目标页面，每个目标页面都可以作为框架页（类似单页面的框架页），在后续的页面跳转，都是用 JS 做的，无需刷新页面。</p>
+<li><p>同构站点浏览方式<br>用户直接访问目标页面，每个目标页面都可以作为框架页（类似单页面的框架页），在后续的页面跳转，都是用 JS 做的，无需刷新页面。</p>
 </li>
 </ol>
-<h3 id="三-上面是思路可根据具体情况选择方案"><a class="markdownIt-Anchor" href="#三-上面是思路可根据具体情况选择方案"></a> 三、上面是思路，可根据具体情况选择方案。</h3>
-<h3 id="四-pwa-和-amp"><a class="markdownIt-Anchor" href="#四-pwa-和-amp"></a> 四、PWA 和 AMP</h3>
-<ol>
-<li>PWA 我们已经针对当前的项目架构做出了自动化工具，可查看源码 <a href="https://github.com/websage-team/sp-pwa" target="_blank" rel="noopener">sp-pwa</a></li>
+<h3 id="三、上面是思路，可根据具体情况选择方案。"><a href="#三、上面是思路，可根据具体情况选择方案。" class="headerlink" title="三、上面是思路，可根据具体情况选择方案。"></a>三、上面是思路，可根据具体情况选择方案。</h3><h3 id="四、PWA-和-AMP"><a href="#四、PWA-和-AMP" class="headerlink" title="四、PWA 和 AMP"></a>四、PWA 和 AMP</h3><ol>
+<li>PWA 我们已经针对当前的项目架构做出了自动化工具，可查看源码 <a target="_blank" rel="noopener" href="https://github.com/websage-team/sp-pwa">sp-pwa</a></li>
 <li>AMP 目前没法自动化，只能根据业务做开发。</li>
 </ol>
-<h3 id="五-开发工具和-webpack-配置在模板项目里已存在感兴趣的请仔细查看-尝试"><a class="markdownIt-Anchor" href="#五-开发工具和-webpack-配置在模板项目里已存在感兴趣的请仔细查看-尝试"></a> 五、开发工具和 Webpack 配置在模板项目里已存在，感兴趣的请仔细查看、尝试</h3>
-<p><a href="https://github.com/websage-team/super-project" target="_blank" rel="noopener">https://github.com/websage-team/super-project</a></p>
-<h2 id="小试牛刀"><a class="markdownIt-Anchor" href="#小试牛刀"></a> 小试牛刀</h2>
-<p>super-project 已经应用到两个项目上了，点击下面链接，亲手体验一下“单页面嫁给多页面”（同构）的 feel~<br>
-（时间就了也许会因为业务停止而打不开）</p>
+<h3 id="五、开发工具和-Webpack-配置在模板项目里已存在，感兴趣的请仔细查看、尝试"><a href="#五、开发工具和-Webpack-配置在模板项目里已存在，感兴趣的请仔细查看、尝试" class="headerlink" title="五、开发工具和 Webpack 配置在模板项目里已存在，感兴趣的请仔细查看、尝试"></a>五、开发工具和 Webpack 配置在模板项目里已存在，感兴趣的请仔细查看、尝试</h3><p><a target="_blank" rel="noopener" href="https://github.com/websage-team/super-project">https://github.com/websage-team/super-project</a></p>
+<h2 id="小试牛刀"><a href="#小试牛刀" class="headerlink" title="小试牛刀"></a>小试牛刀</h2><p>super-project 已经应用到两个项目上了，点击下面链接，亲手体验一下“单页面嫁给多页面”（同构）的 feel~<br>（时间就了也许会因为业务停止而打不开）</p>
 <p><code>PhotoGrid Share H5</code></p>
-<p><a href="http://photogrid.cmcm.com/posts/rnR8C9Xg78MNHDU5TrXOOQ%3D%3D?f=profile-GW3Y75kQ%2BkFshbCpnXV7WEj5b02%2BSC8n%2FgFxM6Sx72E%3D" target="_blank" rel="noopener">例子 - 详情页面</a><br>
-<a href="http://photogrid.cmcm.com/profile/OOUqewXJPwKn2qg%2BRFGgo1qoC2UfoTvLlifSZd6%2BOfM%3D" target="_blank" rel="noopener">例子 - 列表页面</a></p>
+<p><a target="_blank" rel="noopener" href="http://photogrid.cmcm.com/posts/rnR8C9Xg78MNHDU5TrXOOQ%3D%3D?f=profile-GW3Y75kQ+kFshbCpnXV7WEj5b02+SC8n/gFxM6Sx72E=">例子 - 详情页面</a><br><a target="_blank" rel="noopener" href="http://photogrid.cmcm.com/profile/OOUqewXJPwKn2qg%2BRFGgo1qoC2UfoTvLlifSZd6%2BOfM%3D">例子 - 列表页面</a></p>
 <p><code>News Republic Site</code></p>
-<p><a href="https://news.cmcm.com/" target="_blank" rel="noopener">例子 - 首页</a><br>
-<a href="https://news.cmcm.com/detail/03EAFABEFA10100001_us" target="_blank" rel="noopener">例子 - 详情页面</a></p>
-<h2 id="结语"><a class="markdownIt-Anchor" href="#结语"></a> 结语</h2>
-<p>综上所述，是我个人经验的整理和融合，让网站即有 SPA 的体验又不失 SEO 的能力（单页面嫁给了多页面）。发掘所有能提高用户体验的方式，将优化进行到底。后续我和团队还会继续优化 super-project 框架，下一个解决的问题就是升级框架的成本变低，使用框架的成本变低，是针对业务开发者使用上的体验优化。</p>
+<p><a target="_blank" rel="noopener" href="https://news.cmcm.com/">例子 - 首页</a><br><a target="_blank" rel="noopener" href="https://news.cmcm.com/detail/03EAFABEFA10100001_us">例子 - 详情页面</a></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>综上所述，是我个人经验的整理和融合，让网站即有 SPA 的体验又不失 SEO 的能力（单页面嫁给了多页面）。发掘所有能提高用户体验的方式，将优化进行到底。后续我和团队还会继续优化 super-project 框架，下一个解决的问题就是升级框架的成本变低，使用框架的成本变低，是针对业务开发者使用上的体验优化。</p>
 <p>欢迎感兴趣的朋友随时探讨。</p>
 
       
@@ -525,10 +427,10 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
     <div class="article-more less">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2017-08-03</span>
-      <!-- <a data-url="http://me.websage.com/2017/08/03/spa-marry-mpa/" data-id="cl1hzyw5k000640tl1ast4v12" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2017/08/03/spa-marry-mpa/" data-id="clbvzdqrr000563chfqr0f9wl" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -547,7 +449,7 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
 </a> -->
     <!-- 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/类别一/">类别一</a>
+    <a class="article-category-link" href="/categories/%E7%B1%BB%E5%88%AB%E4%B8%80/">类别一</a>
   </div>
  -->
   </div>
@@ -566,31 +468,30 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
     
     <div class="article-entry less" itemprop="articleBody">
       
-        <p>这是第一次打开<a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>博客系统的内容。</p>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>这是第一次打开<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>博客系统的内容。</p>
+<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 
       
     </div>
     <div class="article-more less">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2016-10-01</span>
-      <!-- <a data-url="http://me.websage.com/2016/10/01/hello-hexo/" data-id="cl1hzyw5b000040tl6ssoytax" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2016/10/01/hello-hexo/" data-id="clbvzdqro000163chbk8rfe2o" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -610,7 +511,7 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
         Work at <a href="http://cmcm.com" rel="nofollow" target="_blank">Cheetah Mobile</a> UX
 
         <div class="sns">
-            <a href="http://github.com/dongwenxiao"><i class="fab fa-github"></i></a>
+            <a target="_blank" rel="noopener" href="http://github.com/dongwenxiao"><i class="fab fa-github"></i></a>
             <a href="mailto:cs_victor@126.com"><i class="fas fa-envelope-square"></i></a>
         </div>
     </div>
@@ -620,7 +521,7 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/分享/">分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/技术/">技术</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/" rel="tag">React</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
     </div>
   </div>
 
@@ -643,7 +544,7 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2022 董文枭<br>
-      Powered by <a href="http://hexo.io/" target="_blank" rel="nofollow">Hexo</a> &amp; Theme by <a href="https://github.com/dongwenxiao/dongwenxiao.github.io/tree/src/themes/codemonkey" rel="nofollow">Codemoney</a>
+      Powered by <a href="http://hexo.io/" target="_blank" rel="nofollow">Hexo</a> &amp; Theme by <a target="_blank" href="https://github.com/dongwenxiao/dongwenxiao.github.io/tree/src/themes/codemonkey" rel="nofollow noopener">Codemoney</a>
     </div>
   </div>
 </footer>
@@ -662,12 +563,20 @@ b) 前端开发的时候可以轻松设置 SEO 内容（如 meta、title 等）<
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/app.js"></script>
+
+
 <script src="/js/script.js"></script>
+
 
 
 

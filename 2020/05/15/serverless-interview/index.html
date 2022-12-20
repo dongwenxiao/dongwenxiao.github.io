@@ -8,19 +8,21 @@
   
   <title>2020 Serverless 实践，腾讯云采访 | 董文枭&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="采访实录 问：董老师您好，请简要介绍一下您所在的团队。 答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。 问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？ 答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构">
-<meta name="keywords" content="技术,koot.js,分享">
+  <meta name="description" content="采访实录问：董老师您好，请简要介绍一下您所在的团队。 答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。 问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？ 答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构），">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2020 Serverless 实践，腾讯云采访">
 <meta property="og:url" content="http://me.websage.com/2020/05/15/serverless-interview/index.html">
 <meta property="og:site_name" content="董文枭&#39;s Website">
-<meta property="og:description" content="采访实录 问：董老师您好，请简要介绍一下您所在的团队。 答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。 问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？ 答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:description" content="采访实录问：董老师您好，请简要介绍一下您所在的团队。 答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。 问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？ 答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构），">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg">
-<meta property="og:updated_time" content="2022-04-02T15:13:53.496Z">
+<meta property="article:published_time" content="2020-05-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-20T08:17:46.625Z">
+<meta property="article:author" content="董文枭">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="koot.js">
+<meta property="article:tag" content="分享">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2020 Serverless 实践，腾讯云采访">
-<meta name="twitter:description" content="采访实录 问：董老师您好，请简要介绍一下您所在的团队。 答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。 问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？ 答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构">
 <meta name="twitter:image" content="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg">
   
     <link rel="alternate" href="/atom.xml" title="董文枭&#39;s Website" type="application/atom+xml">
@@ -31,11 +33,13 @@
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="/css/style.css">
+  
+<link rel="stylesheet" href="/css/style.css">
+
   <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   
-</head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
   <div id="container">
@@ -48,10 +52,6 @@
       <h1 id="big-title-wrap">
         <a href="/" class="big-title">董文枭&#39;s Website</a>
       </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">小标题</a>
-        </h2>
       
     </div>
     <div id="header-inner" class="inner">
@@ -95,9 +95,8 @@
     
     <div class="article-entry " itemprop="articleBody">
       
-        <p><img src="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg" alt=""></p>
-<h2 id="采访实录"><a class="markdownIt-Anchor" href="#采访实录"></a> 采访实录</h2>
-<p><em>问：董老师您好，请简要介绍一下您所在的团队。</em></p>
+        <p><img src="https://img.serverlesscloud.cn/2020515/1589534502498-wenxiao.jpg"></p>
+<h2 id="采访实录"><a href="#采访实录" class="headerlink" title="采访实录"></a>采访实录</h2><p><em>问：董老师您好，请简要介绍一下您所在的团队。</em></p>
 <p>答：我的团队是平台前端部，负责公司 AI、机器人、广告系统等业务和对外网站业务，团队成员包括前端工程师和 Node 全栈工程师。</p>
 <p><em>问：基于什么背景和问题，您的团队考虑采用 SSR 的技术方案？</em></p>
 <p>答：当然是追求极致的用户体验，虽然 HTML、CSS、JS 以及其他资源都做到了按需加载，但这里的 SSR 更是 Isomorphic（前后端同构），把 SSR (Server Side Rendering) 和 CSR (Client Side Render) 的优点结合，让用户浏览网页的时候不管是首屏还是随后操作的其他页都能更快的展示响应。</p>
@@ -121,7 +120,7 @@
 <p>前端的 SSR 一定会考虑是否需要 Isomorphic，如果小团队建议先从比较流行的框架着手尝试，如 Next.js、Nuxt.js 等，也推荐体验我们的 Koot.js。Next.js、Nuxt.js 这些框架在腾讯云 Serverless Framework 都现成的组件支持，Koot.js 也可以用我们的方案。无论是 SSR 还是 Serverless，最好都是基于现有框架，从零开始搭建框架坑太多了，如果没有足够业务支持不要浪费精力自己去做框架，学会一个框架的成本要远小于维护一个框架的成本。</p>
 <p>采访人：王俊杰</p>
 <blockquote>
-<p>More: <a href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview" target="_blank" rel="noopener">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
+<p>More: <a target="_blank" rel="noopener" href="https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview">https://serverlesscloud.cn/best-practice/2020-05-15-ssr-interview</a></p>
 </blockquote>
 
       
@@ -129,10 +128,10 @@
     <div class="article-more ">...</div>
     <footer class="article-footer">
       <span class="article-footer-date">2020-05-15</span>
-      <!-- <a data-url="http://me.websage.com/2020/05/15/serverless-interview/" data-id="cl1hzyw5h000340tlif5zp8sw" class="article-share-link">Share</a> -->
+      <!-- <a data-url="http://me.websage.com/2020/05/15/serverless-interview/" data-id="clbvzdqrq000363ch3mffbqq8" class="article-share-link">Share</a> -->
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分享/">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/koot-js/" rel="tag">koot.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -171,7 +170,7 @@
     <div class="widget">
       <div class="hidden-xs col-sm-3 toc-col">
         <div class="toc-wrap">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#采访实录"><span class="toc-text"> 采访实录</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%87%E8%AE%BF%E5%AE%9E%E5%BD%95"><span class="toc-text">采访实录</span></a></li></ol>
         </div>
       </div>
     </div>
@@ -186,7 +185,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2022 董文枭<br>
-      Powered by <a href="http://hexo.io/" target="_blank" rel="nofollow">Hexo</a> &amp; Theme by <a href="https://github.com/dongwenxiao/dongwenxiao.github.io/tree/src/themes/codemonkey" rel="nofollow">Codemoney</a>
+      Powered by <a href="http://hexo.io/" target="_blank" rel="nofollow">Hexo</a> &amp; Theme by <a target="_blank" href="https://github.com/dongwenxiao/dongwenxiao.github.io/tree/src/themes/codemonkey" rel="nofollow noopener">Codemoney</a>
     </div>
   </div>
 </footer>
@@ -205,12 +204,20 @@
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
 
 
 <script src="/js/app.js"></script>
+
+
 <script src="/js/script.js"></script>
+
 
 
 
