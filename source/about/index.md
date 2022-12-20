@@ -7,20 +7,24 @@ banner-height: 300px
 
 # 董文枭
 
-来自东北 **佳木斯** 的 Web Developer
+来自东北 **佳木斯** 的 Fullstack Developer
 
 ## Work
 
-猎豹移动用户体验部，负责 [CMUX](https://cmux.cmcm.com/) 的 WEB 前端工作
+猎豹移动，负责 [CMUX](https://cmux.cmcm.com/) 的技术团队管理
 
 ## Skill
 
-- HTML / Javascript /CSS
-- React / Redux / Webpack / Less / TailwindCSS
-- MySQL / MongoDB / Sequelize
-- Ioinc / Electron
-- Node / Koa /Serverless
-- Cocos2d-JS
+- Web
+  - HTML / Javascript / CSS
+  - React / Redux / Webpack / Less / TailwindCSS
+- Server
+  - Node / Koa / Serverless
+  - MySQL / MongoDB / Sequelize
+- App
+  - Ioinc / Electron / Taro
+- Game
+  - Cocos2d-JS
 
 ## Open Source
 
