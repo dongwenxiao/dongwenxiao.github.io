@@ -21,7 +21,8 @@ banner-height: 300px
 - Server
   - Node / Koa / Serverless
   - MySQL / MongoDB / Sequelize
-- App
+  - KeystoneJS
+- App & 小程序
   - Ioinc / Electron / Taro
 - Game
   - Cocos2d-JS

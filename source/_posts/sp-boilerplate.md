@@ -1,5 +1,5 @@
 ---
-title: sp-boilerplate (super-project 模板项目)
+title: sp-boilerplate (super-project 模板项目)(废弃)
 date: 2018-04-19 10:34:00
 banner-color: 4644b1
 tags:
