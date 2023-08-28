@@ -36,7 +36,7 @@ shell [ZSH](https://ohmyz.sh/)
 ## Theme 主题
 
 主题 [Dracula](https://draculatheme.com/) 包含了 iTerm2、VSCode、Zsh、Chrome...
-字体 [Nerd Font](https://www.nerdfonts.com/font-downloads)
+字体 [Nerd Font](https://www.nerdfonts.com/font-downloads)  终端(mononoki Nerd Font)
 
 ## Browser 浏览器
 
