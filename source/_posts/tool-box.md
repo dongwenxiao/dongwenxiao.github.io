@@ -68,9 +68,15 @@ category: 类别一
 
 ## Theme 主题
 
-主题 [Dracula](https://draculatheme.com/) 包含了 iTerm2、VSCode、Zsh、Chrome...
-字体 [Nerd Font](https://www.nerdfonts.com/font-downloads) 终端(mononoki Nerd Font)
+• 主题 [Dracula](https://draculatheme.com/) 包含了 iTerm2、VSCode、Zsh、Chrome...
+• 字体 [Nerd Font](https://www.nerdfonts.com/font-downloads) 终端(mononoki Nerd Font)
   
+## AI 工具
+
+• 大语言模型 [Llama3](https://ollama.com/library/llama3) 8b 版本可以本地运行  
+• RAG 工具 [Dify](https://github.com/langgenius/dify) 支持聊天、RAG、工作流编排
+
+
 <br/>
 <br/>
 <br/>
