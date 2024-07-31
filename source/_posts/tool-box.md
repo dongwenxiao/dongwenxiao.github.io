@@ -18,7 +18,7 @@ category: 类别一
 | 脑图     | [XMind](https://xmind.cn/)                                                                                                                                   |
 | 网盘     | [百度网盘](https://pan.baidu.com/download)                                                                                                                   |
 | 输入法   | [微信输入法](https://z.weixin.qq.com/)                                                                                                                       |
-| 辅助工具 | [腾讯柠檬](https://lemon.qq.com/) 、[iShot 截图](https://www.better365.cn/ishot.html) 、[FastZip 解压](https://www.better365.cn/fastzip.html)                |
+| 辅助工具 | [iShot 截图](https://www.better365.cn/ishot.html) 、[FastZip 解压](https://www.better365.cn/fastzip.html)                |
 | 开发工具 | [VSCode IDE](https://code.visualstudio.com/) 、[Postman API](https://www.postman.com/downloads/) 、[Docker](https://www.docker.com/products/docker-desktop/) |
 
 ## VSCode 插件
@@ -36,6 +36,7 @@ category: 类别一
 | 美化         | [VSCode Icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)、[Dracula Official 主题](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)                                                                                                                                                                                                                                                       |
 | 快捷键       | [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)                                                                                                                                                                                                                                                                                                                                                           |
 | 查看文件大小 | [Filesize](https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize)                                                                                                                                                                                                                                                                                                                                                                              |
+| AI 助写代码 | [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)                                                                                                                                                                                                                                                                                                                                                                              |
 | TODO         |
 
 ## Chrome 插件
@@ -59,26 +60,31 @@ category: 类别一
 
 ## Terminal 终端
 
-• 软件安装器 [HomeBrew](https://brew.sh/)
-• AI 命令终端 [Warp](https://www.warp.dev/)
+• 软件安装器 [HomeBrew](https://brew.sh/)  
+• 管理服务器命令终端 [XTerminal](https://www.terminal.icu/)  
+• AI 命令终端 [Warp](https://www.warp.dev/)  
 • 命令终端 [iTerm2](https://iterm2.com/)  
-• Shell [ZSH](https://ohmyz.sh/)
-• 美化 [Starship](https://starship.rs/zh-CN/)
-• NodeJS 版本管理 [NVM](https://github.com/nvm-sh/nvm)
+• Shell [ZSH](https://ohmyz.sh/)  
+• 美化 [Starship](https://starship.rs/zh-CN/)  
+• NodeJS 版本管理 [NVM](https://github.com/nvm-sh/nvm)  
 
 ## Theme 主题
 
-• 主题 [Dracula](https://draculatheme.com/) 包含了 iTerm2、VSCode、Zsh、Chrome...
-• 字体 [Nerd Font](https://www.nerdfonts.com/font-downloads) 终端(mononoki Nerd Font)
+• 主题 [Dracula](https://draculatheme.com/) 包含了 iTerm2、VSCode、Zsh、Chrome...  
+• 字体 [Nerd Font](https://www.nerdfonts.com/font-downloads) 终端(mononoki Nerd Font)  
   
 ## AI 工具
 
 • 大语言模型 [Llama3](https://ollama.com/library/llama3) 8b 版本可以本地运行  
-• RAG 工具 [Dify](https://github.com/langgenius/dify) 支持聊天、RAG、工作流编排
+• RAG 工具 [Dify](https://github.com/langgenius/dify) 支持聊天、RAG、工作流编排  
+
+## 其他
+
+• MongoDB 客户端 [Studio 3T](https://studio3t.com/)   
 
 
 <br/>
 <br/>
 <br/>
 
-_------------------------------ 上次更新 2024.5.20 ------------------------------_
+_------------------------------ 上次更新 2024.7.31 ------------------------------_
