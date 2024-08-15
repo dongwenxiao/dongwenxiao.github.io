@@ -39,6 +39,10 @@ docker-compose build --no-cache
 # 重新构建并启动容器
 docker-compose up --build  
 
+# 导出/导入镜像
+docker save -o /Users/dongwenxiao/Documents/test/docker-test/my-img.tar my-custom-koa-app-test
+docker load -i ./my-img.tar
+
 ```
 
 ## Dockerfile 模板

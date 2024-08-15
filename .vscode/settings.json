@@ -9,6 +9,7 @@
         "koot",
         "mkdir",
         "mononoki",
-        "umijs"
+        "umijs",
+        "WORKDIR"
     ]
 }
