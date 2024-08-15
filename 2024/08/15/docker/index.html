@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="code-fdh3NAiQpB" />
+  
+
+  
+  <title>🐳 Docker | 董文枭&#39;s Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="记录 Docker 常用的内容。 Docker 几个常用工具   工具 说明    Docker 用于创建和管理容器的基础工具，允许开发者将应用程序及其依赖打包成轻量级的容器，实现环境一致性和快速部署。   Docker Compose 用于定义和运行多容器Docker应用的工具，通过一个YAML文件配置应用的服务、网络和卷，简化了多容器应用的管理。   Docker Desktop 提供了在Wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🐳 Docker">
+<meta property="og:url" content="http://me.websage.com/2024/08/15/docker/index.html">
+<meta property="og:site_name" content="董文枭&#39;s Website">
+<meta property="og:description" content="记录 Docker 常用的内容。 Docker 几个常用工具   工具 说明    Docker 用于创建和管理容器的基础工具，允许开发者将应用程序及其依赖打包成轻量级的容器，实现环境一致性和快速部署。   Docker Compose 用于定义和运行多容器Docker应用的工具，通过一个YAML文件配置应用的服务、网络和卷，简化了多容器应用的管理。   Docker Desktop 提供了在Wi">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-08-15T13:20:14.975Z">
+<meta property="article:author" content="董文枭">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="Docker">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="董文枭&#39;s Website" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      
+<header id="header"   data-log="">
+  <div id="banner" class="" style=""></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner" style="display:none;">
+      <h1 id="big-title-wrap">
+        <a href="/" class="big-title">董文枭&#39;s Website</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <div class="logo"><a href="/"><img src="https://avatars3.githubusercontent.com/u/4394559?s=460&v=4" alt=""></a></div>
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+
+
+<article id="post-docker" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <!-- <a href="/2024/08/15/docker/" class="article-date">
+  <time datetime="2024-08-14T16:00:00.000Z" itemprop="datePublished">2024-08-15</time>
+</a> -->
+    <!-- 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%B1%BB%E5%88%AB%E4%B8%80/">类别一</a>
+  </div>
+ -->
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      🐳 Docker
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <p>记录 Docker 常用的内容。</p>
+<h2 id="Docker-几个常用工具"><a href="#Docker-几个常用工具" class="headerlink" title="Docker 几个常用工具"></a>Docker 几个常用工具</h2><table>
+<thead>
+<tr>
+<th>工具</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Docker</td>
+<td>用于创建和管理容器的基础工具，允许开发者将应用程序及其依赖打包成轻量级的容器，实现环境一致性和快速部署。</td>
+</tr>
+<tr>
+<td>Docker Compose</td>
+<td>用于定义和运行多容器Docker应用的工具，通过一个YAML文件配置应用的服务、网络和卷，简化了多容器应用的管理。</td>
+</tr>
+<tr>
+<td>Docker Desktop</td>
+<td>提供了在Windows和macOS上运行Docker容器的本地开发环境，包括Docker引擎、Docker CLI、Kubernetes和Docker Compose。</td>
+</tr>
+<tr>
+<td>Docker Hub</td>
+<td>Docker的公共镜像仓库，用户可以在此存储、分发和管理Docker镜像，也可以从社区共享的镜像中拉取需要的镜像。</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Write by GPT-4o</p>
+</blockquote>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 查看正在运行的容器</span></span><br><span class="line">docker ps </span><br><span class="line"></span><br><span class="line"><span class="comment"># 镜像处理</span></span><br><span class="line">docker images</span><br><span class="line">docker rmi &lt;image_id&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新构建镜像</span></span><br><span class="line">docker-compose build --no-cache </span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新构建并启动容器</span></span><br><span class="line">docker-compose up --build  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="Dockerfile-模板"><a href="#Dockerfile-模板" class="headerlink" title="Dockerfile 模板"></a>Dockerfile 模板</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用 Node.js 20 作为基础镜像</span></span><br><span class="line">FROM node:20</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建并设置工作目录</span></span><br><span class="line">WORKDIR /data/app</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制 package.json 和 package-lock.json 文件</span></span><br><span class="line">COPY package.json ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装项目依赖</span></span><br><span class="line">RUN npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 复制项目文件</span></span><br><span class="line">COPY . .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 暴露端口，默认使用 3000，实际端口将通过 docker-compose.yml 或命令行传入</span></span><br><span class="line">EXPOSE 3000</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动命令，默认使用 3000 端口</span></span><br><span class="line">CMD [<span class="string">&quot;npm&quot;</span>, <span class="string">&quot;start&quot;</span>]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Docker-Compose-模板"><a href="#Docker-Compose-模板" class="headerlink" title="Docker Compose 模板"></a>Docker Compose 模板</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">version:</span> <span class="string">&quot;3.8&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">app:</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">test-container</span> </span><br><span class="line">    <span class="attr">image:</span> <span class="string">my-custom-koa-app-test:latest</span></span><br><span class="line">    <span class="attr">network_mode:</span> <span class="string">bridge</span></span><br><span class="line">    <span class="attr">build:</span></span><br><span class="line">      <span class="attr">context:</span> <span class="string">.</span></span><br><span class="line">      <span class="attr">dockerfile:</span> <span class="string">Dockerfile</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;4000:3000&quot;</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">PORT=3000</span></span><br><span class="line">    <span class="attr">working_dir:</span> <span class="string">/data/app</span></span><br><span class="line">    <span class="attr">command:</span> <span class="string">npm</span> <span class="string">start</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="article-more ">...</div>
+    <footer class="article-footer">
+      <span class="article-footer-date">2024-08-15</span>
+      <!-- <a data-url="http://me.websage.com/2024/08/15/docker/" data-id="clzvbekaa0001a26u4g8acaor" class="article-share-link">Share</a> -->
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Docker/" rel="tag">Docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/12/20/tool-box/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">👨🏻‍💻 工具集合</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        <aside class="toc-sticky" id="sidebar">
+  
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">目录</h3>
+    <div class="widget">
+      <div class="hidden-xs col-sm-3 toc-col">
+        <div class="toc-wrap">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-%E5%87%A0%E4%B8%AA%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7"><span class="toc-text">Docker 几个常用工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dockerfile-%E6%A8%A1%E6%9D%BF"><span class="toc-text">Dockerfile 模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Docker-Compose-%E6%A8%A1%E6%9D%BF"><span class="toc-text">Docker Compose 模板</span></a></li></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2024 董文枭<br>
+      Powered by <a href="http://hexo.io/" target="_blank" rel="nofollow">Hexo</a> &amp; Theme by <a target="_blank" href="https://github.com/dongwenxiao/dongwenxiao.github.io/tree/src/themes/codemonkey" rel="nofollow noopener">Codemoney</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav>
+    
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/app.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
+
+<!-- Baidu auto push js -->
+<script>
+  ;(function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137365876-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-137365876-3');
+</script>
