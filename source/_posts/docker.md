@@ -49,7 +49,8 @@ docker load -i ./my-img.tar
 
 ```bash
 # 使用 Node.js 20 作为基础镜像
-FROM node:20
+FROM node:20-alpine
+# FROM node:20
 
 # 创建并设置工作目录
 WORKDIR /data/app
@@ -68,6 +69,7 @@ EXPOSE 3000
 
 # 启动命令，默认使用 3000 端口
 CMD ["npm", "start"]
+
 ```
 
 ## Docker Compose 模板
