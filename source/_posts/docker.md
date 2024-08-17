@@ -94,7 +94,7 @@ services:
 
 ## 场景：Mac 上构建 Docker 支持构建多平台镜像
 
-在 Mac 上构建多平台镜像的时候会因缺少模拟器而报错，这时候需要安装 tonistiigi/binfmt 来支持多平台镜像构建。
+在 Mac 上构建多平台镜像的时候会因缺少模拟器而报错，这时候需要安装 [tonistiigi/binfmt](https://hub.docker.com/r/tonistiigi/binfmt) 来支持多平台镜像构建。
 
 ```bash
 
