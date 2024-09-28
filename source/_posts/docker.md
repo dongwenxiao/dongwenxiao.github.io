@@ -131,6 +131,17 @@ docker-compose up -d
 ```
 
 
+## 场景：Mac 可运行 Docker 多平台镜像
+
+```bash
+# Step 1 安装 Rosetta 2
+softwareupdate --install-rosetta
+
+# Step 2 在 Docker Desktop 的设置开启 Rosetta 2 支持
+# Docker Desktop -> Preferences -> General -> Use Rosetta for x86_64/amd64 emulation on Apple Silicon
+```
+
+
 ## 场景：手动部署镜像，Docker 镜像导出和导入
 当不借助 Docker Hub 时，可以通过导出和导入镜像的方式来，把镜像打成压缩包，通过文件方式上传到服务器上。
 
