@@ -364,7 +364,22 @@ async function loadSystemFonts() {
   // 主字体（公司名称）
   let defaultFont;
   if (isWindows) {
-    // Windows: 强制使用"宋体"，即使列表中没有也要设置
+    // Windows: 强制使用"宋体"，如果列表中没有则手动添加
+    if (!availableFonts.includes("宋体")) {
+      availableFonts.unshift("宋体"); // 添加到列表开头
+      // 手动添加选项到下拉框
+      const option1 = document.createElement("option");
+      option1.value = "宋体";
+      option1.textContent = "宋体";
+      option1.style.fontFamily = "宋体";
+      fontFamilySelect.insertBefore(option1, fontFamilySelect.firstChild);
+
+      const option2 = document.createElement("option");
+      option2.value = "宋体";
+      option2.textContent = "宋体";
+      option2.style.fontFamily = "宋体";
+      subFontFamilySelect.insertBefore(option2, subFontFamilySelect.firstChild);
+    }
     defaultFont = "宋体";
   } else if (isMac) {
     // macOS: 优先选择 Songti SC（宋体-简），其次 SimSun，再次包含"宋"的字体
