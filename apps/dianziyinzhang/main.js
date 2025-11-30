@@ -361,8 +361,8 @@ async function loadSystemFonts() {
   // 主字体（公司名称）
   let defaultFont;
   if (isWindows) {
-    // Windows: 强制使用 SimSun（宋体）
-    defaultFont = availableFonts.find((f) => f === "SimSun") || availableFonts[0];
+    // Windows: 强制使用"宋体"，即使列表中没有也要设置
+    defaultFont = "宋体";
   } else if (isMac) {
     // macOS: 优先选择 Songti SC（宋体-简），其次 SimSun，再次包含"宋"的字体
     defaultFont =
