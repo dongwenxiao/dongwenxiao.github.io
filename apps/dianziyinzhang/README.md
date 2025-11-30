@@ -13,6 +13,7 @@
 ## 构建与混淆
 - 默认 `pnpm build` 会用 `javascript-obfuscator`（在 `vite.config.js` 中的自定义插件）对产物做进一步混淆，启用了控制流平坦化、字符串数组、全局重命名等选项。
 - 如果需要调整混淆强度，可修改 `vite.config.js` 中传给 `obfuscatePlugin` 的配置。
+- 构建输出目录：`public/apps/dianziyinzhang`。
 
 ## 开发命令
 - 本地开发：`pnpm dev`

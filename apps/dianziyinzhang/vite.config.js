@@ -47,7 +47,7 @@ export default defineConfig({
     })
   ],
   build: {
-    outDir: resolve(__dirname, '../../public/dianziyinzhang'),
+    outDir: resolve(__dirname, '../../public/apps/dianziyinzhang'),
     emptyOutDir: true,
     rollupOptions: {
       input: {
