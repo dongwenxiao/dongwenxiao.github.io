@@ -356,10 +356,14 @@ async function loadSystemFonts() {
   // 智能选择默认字体
   // 检测操作系统
   const isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
+  const isWindows = navigator.platform.toUpperCase().indexOf("WIN") >= 0;
 
   // 主字体（公司名称）
   let defaultFont;
-  if (isMac) {
+  if (isWindows) {
+    // Windows: 强制使用 SimSun（宋体）
+    defaultFont = availableFonts.find((f) => f === "SimSun") || availableFonts[0];
+  } else if (isMac) {
     // macOS: 优先选择 Songti SC（宋体-简），其次 SimSun，再次包含"宋"的字体
     defaultFont =
       availableFonts.find((f) => f === "Songti SC") ||
@@ -367,7 +371,7 @@ async function loadSystemFonts() {
       availableFonts.find((f) => f.includes("宋") || f.includes("Song")) ||
       availableFonts[0];
   } else {
-    // Windows: 优先选择 SimSun（宋体），其次包含"宋"的字体
+    // 其他系统：优先选择包含"宋"的字体
     defaultFont =
       availableFonts.find((f) => f === "SimSun") ||
       availableFonts.find((f) => f.includes("宋") || f.includes("Song")) ||
