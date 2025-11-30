@@ -1,3 +1,6 @@
+// Output version to console
+console.log(`version v${__APP_VERSION__}`);
+
 const canvas = document.getElementById("sealCanvas");
 const ctx = canvas.getContext("2d");
 const downloadBtn = document.getElementById("downloadSeal");

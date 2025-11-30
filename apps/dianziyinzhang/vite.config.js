@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { readFileSync } from 'fs';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import obfuscator from 'javascript-obfuscator';
 
@@ -8,6 +9,10 @@ const { obfuscate } = obfuscator;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+// Read version from package.json
+const pkg = JSON.parse(readFileSync(resolve(__dirname, 'package.json'), 'utf-8'));
+const version = pkg.version;
 
 const obfuscatePlugin = (options = {}) => ({
   name: 'vite:obfuscatefiles',
@@ -30,6 +35,9 @@ const obfuscatePlugin = (options = {}) => ({
 
 export default defineConfig({
   base: './',
+  define: {
+    '__APP_VERSION__': JSON.stringify(version)
+  },
   plugins: [
     createHtmlPlugin({ minify: true }),
     obfuscatePlugin({
