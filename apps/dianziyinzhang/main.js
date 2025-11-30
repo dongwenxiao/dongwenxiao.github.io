@@ -1,5 +1,7 @@
 const canvas = document.getElementById("sealCanvas");
 const ctx = canvas.getContext("2d");
+const downloadBtn = document.getElementById("downloadSeal");
+const randomNoiseBtn = document.getElementById("randomNoise");
 
 // Lightweight obfuscation: avoid直接暴露域名字符串
 const hostHash = (
@@ -17,6 +19,18 @@ const hostHash = (
 if (typeof window !== "undefined") {
   window.hostHash = hostHash;
 }
+
+const pad2 = (num) => String(num).padStart(2, "0");
+const formatTimestamp = () => {
+  const now = new Date();
+  return [
+    now.getFullYear(),
+    pad2(now.getMonth() + 1),
+    pad2(now.getDate()),
+    pad2(now.getHours()),
+    pad2(now.getMinutes()),
+  ].join("");
+};
 
 const LICENSED_HOST_HASHES = new Set([
   4235214215, // localhost
@@ -89,6 +103,50 @@ const config = {
   maxWidth: document.getElementById("maxWidth"),
   minHeight: document.getElementById("minHeight"),
   maxHeight: document.getElementById("maxHeight"),
+  noiseGradientStrength: document.getElementById("noiseGradientStrength"),
+};
+
+const safeCompanyName = () => {
+  const raw = (config.companyName.value || "seal").trim();
+  const sanitized = raw.replace(/[\\/:*?"<>|]/g, "").replace(/\s+/g, "_");
+  return sanitized || "seal";
+};
+
+const downloadSeal = () => {
+  const filename = `${safeCompanyName()}_${formatTimestamp()}.png`;
+  const link = document.createElement("a");
+  link.href = canvas.toDataURL("image/png");
+  link.download = filename;
+  link.click();
+};
+
+const setValueAndSync = (input, value) => {
+  if (!input) return;
+  input.value = value;
+  input.dispatchEvent(new Event("input", { bubbles: true }));
+};
+
+const randBetween = (min, max, decimals = 0) => {
+  const factor = Math.pow(10, decimals);
+  return (
+    Math.round((min + Math.random() * (max - min)) * factor) / factor
+  );
+};
+
+const randomizeNoise = () => {
+  const density = Math.round(randBetween(1200, 3000));
+  const minW = randBetween(1, 2.2, 1);
+  const maxW = Math.min(3, Math.max(minW + 0.2, randBetween(1.5, 3, 1)));
+  const minH = randBetween(1, 2.2, 1);
+  const maxH = Math.min(3, Math.max(minH + 0.2, randBetween(1.5, 3, 1)));
+  const gradient = randBetween(0.7, 0.95, 2);
+
+  setValueAndSync(config.noiseDensity, density);
+  setValueAndSync(config.minWidth, minW);
+  setValueAndSync(config.maxWidth, maxW);
+  setValueAndSync(config.minHeight, minH);
+  setValueAndSync(config.maxHeight, maxH);
+  setValueAndSync(config.noiseGradientStrength, gradient);
 };
 
 // Attach listeners
@@ -346,6 +404,13 @@ async function loadSystemFonts() {
 // 加载字体
 loadSystemFonts();
 
+if (downloadBtn) {
+  downloadBtn.addEventListener("click", downloadSeal);
+}
+if (randomNoiseBtn) {
+  randomNoiseBtn.addEventListener("click", randomizeNoise);
+}
+
 function getFontSizeValue(key) {
   if (licenseGuard.isTrusted) {
     return parseInt(config[key].value);
@@ -528,7 +593,12 @@ const drawCurvedText = function (text, cx, cy, radius, position, options) {
 
 function applyNoise() {
   const density = parseInt(config.noiseDensity.value);
-  if (density <= 0) return;
+  const gradientStrengthRaw = parseFloat(
+    config.noiseGradientStrength.value || "0"
+  );
+  const gradientStrength = Math.max(0, Math.min(1, gradientStrengthRaw));
+  const hasGradient = gradientStrength > 0.001;
+  if (density <= 0 && !hasGradient) return;
 
   const minW = parseInt(config.minWidth.value);
   const maxW = parseInt(config.maxWidth.value);
@@ -537,7 +607,6 @@ function applyNoise() {
 
   ctx.save();
   ctx.globalCompositeOperation = "destination-out";
-  ctx.fillStyle = "rgba(0,0,0,1)";
 
   const w = canvas.width;
   const h = canvas.height;
@@ -545,13 +614,35 @@ function applyNoise() {
   const startX = (w - boxSize) / 2;
   const startY = (h - boxSize) / 2;
 
+  const applyBaseGradient = () => {
+    if (!hasGradient) return;
+    const g = ctx.createLinearGradient(startX, 0, startX + boxSize, 0);
+    const peakAlpha = 0.65 * gradientStrength; // 左侧覆盖强度更高
+    g.addColorStop(0, `rgba(255,255,255,${peakAlpha.toFixed(3)})`);
+    g.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = g;
+    ctx.fillRect(startX, startY, boxSize, boxSize);
+  };
+
   for (let i = 0; i < density; i++) {
     const x = startX + Math.random() * boxSize;
     const y = startY + Math.random() * boxSize;
     const rw = minW + Math.random() * (maxW - minW);
     const rh = minH + Math.random() * (maxH - minH);
 
+    const rectCenterX = x + rw / 2;
+    const t = rectCenterX / w; // 0 左 -> 1 右
+    const exp = 0.7 + gradientStrength * 2.2; // 越大，右侧越淡
+    const maxAlpha = 0.8;
+    const minAlpha = 0.05;
+    const baseAlpha =
+      minAlpha + (maxAlpha - minAlpha) * (1 - Math.pow(t, exp));
+    const jitter = (Math.random() - 0.5) * 0.12;
+    const alpha = Math.max(minAlpha, Math.min(maxAlpha, baseAlpha + jitter));
+
+    ctx.fillStyle = `rgba(255,255,255,${alpha.toFixed(3)})`;
     ctx.fillRect(x, y, rw, rh);
   }
+  applyBaseGradient();
   ctx.restore();
 }

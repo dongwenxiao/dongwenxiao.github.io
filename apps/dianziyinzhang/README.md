@@ -15,6 +15,12 @@
 - 如果需要调整混淆强度，可修改 `vite.config.js` 中传给 `obfuscatePlugin` 的配置。
 - 构建输出目录：`public/apps/dianziyinzhang`。
 
+## 导出
+- 下载印章时文件名格式：`[公司名]_[YYYYMMDDHHmm].png`。
+
+## 仿真
+- “透明渐变”滑块控制白色叠加的渐变：值越大，印章右侧越淡，模拟印泥不均匀。即使噪点密度很低，只要渐变>0，也会有整体渐变效果。
+
 ## 开发命令
 - 本地开发：`pnpm dev`
 - 构建产物：`pnpm build`
