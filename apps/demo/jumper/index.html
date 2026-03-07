@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Codemonkey Jumper</title> 
+    <script type="text/javascript" src="cocos2d-js-v3.6.js" charset="UTF-8"></script>
+</head>
+<body>   
+    <canvas id="gameCanvas" width="800" height="450"></canvas>
+    <script type="text/javascript">
+      var codemonkey = cm = {};
+          window.onload = function(){
+              cc.game.onStart = function(){
+                  cc.view.adjustViewPort(true);
+                  cc.view.setDesignResolutionSize(800, 450, cc.ResolutionPolicy.SHOW_ALL);
+                  cc.view.resizeWithBrowserSize(true);
+
+                  //load resources
+                  cc.LoaderScene.preload([
+                    "app/PlayScene.js",
+                    "app/Pillar.js",
+                    "app/Runner.js"
+                    ], function () {
+                      cm.playScene = new cm.PlayScene();
+                      cc.director.runScene(cm.playScene);
+                  }, this);
+              };
+              cc.game.run("gameCanvas");
+          };
+    </script>
+</body>
+</html>

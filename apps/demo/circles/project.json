@@ -1,0 +1,26 @@
+{
+    "project_type": "javascript",
+    "debugMode": 1,
+    "showFPS": true,
+    "frameRate": 60,
+    "id": "gameCanvas",
+    "renderMode": 0,
+    "engineDir": "../rts/frameworks/cocos2d-html5",
+    "modules": ["cocos2d"],
+    "jsList": [
+        "src/resource.js",
+        "src/lib/utils.js",
+        "src/controller/GameController.js",
+        "src/controller/BaseController.js",
+        "src/controller/HeroController.js",
+        "src/model/BaseModel.js",
+        "src/model/HeroModel.js",
+        "src/model/EnemyModel.js",
+        "src/model/BulletModel.js",
+        "src/view/BaseView.js",
+        "src/view/HeroView.js",
+        "src/view/Joypad.js",
+        "src/view/AutoJoypad.js",
+        "src/app.js"
+    ]
+}

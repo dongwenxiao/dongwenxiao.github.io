@@ -1,0 +1,200 @@
+@charset "utf-8";
+ 
+/* CSS Document */
+* { color:#000; }
+body { font:12px/1.5 }
+html,body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,object,code,em,span,var,legend,button,input,textarea,th,td,a,img,header,footer,nav,aside,audio,datalist,section { margin:0;padding:0;border:0;outline:0; }/*清除内外边距*/
+h1,h2,h3,h4,h5,h6 { font-weight:normal;font-size:100%; }/*设置默认字体*/
+:focus { outline:0; }
+ul,ol,ul li,ol li { list-style: none; }/*重置列表*/
+address,caption,cite,em,code,dfn,th,var { font-style:normal;font-weight:normal; }
+form label { cursor:pointer; }
+input,button,select,textarea { font-family:inherit;font-size:100%;outline:none; }
+textarea { resize:none }
+input { vertical-align:middle; }
+img { border:0; }/*重置图片元素*/
+table { border-collapse:collapse;border-spacing: 0; }/*重置表格*/
+.l { float:left; }
+.r { float:right; }
+button,input[type="reset"],input[type="button"],input[type="submit"] { line-height:normal !important; }
+a { text-decoration:none;}
+a { color:#666;}
+a:hover { text-decoration:underline; }
+input { _filter:chroma(color=#000000); }
+/*--清除浮动
+------------------------------------------------------------------------------------------*/
+.clearfix:after { clear:both;content:".";display:block;font-size:0;height:0;visibility:hidden; }
+.clearfix:after { _zoom:1; }
+.overflow { overflow:hidden; _zoom:1; }
+.clear { clear:both; height:0;font-size:0; overflow:hidden; }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #001d2f;
+}
+.main-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main-wrap #myCanvas {
+  position: absolute;
+  bottom: 1vw;
+  right: 3vw;
+  pointer-events: none;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.main-wrap #app {
+  width: 100%;
+  height: 100%;
+}
+.index_peoplenum {
+  position: absolute;
+  top: 21.76vh;
+  width: 38.12vw;
+  height: 5.3vw;
+  display: none;
+  left: 50%;
+  margin-left: -19.06vw;
+}
+.index_peoplenum .box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.index_peoplenum .box img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.index_peoplenum .box svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index_peoplenum .box svg line.top,
+.index_peoplenum .box svg line.bottom {
+  stroke-dasharray: 100 40;
+}
+.index_peoplenum .box svg line.left,
+.index_peoplenum .box svg line.right {
+  stroke-dasharray: 100 40;
+}
+.index_peoplenum .box svg line {
+  stroke-width: 4;
+  stroke: #0178e3;
+  fill: none;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.index_peoplenum .box .boxline {
+  width: 100%;
+  height: 3px;
+  background: #017ae6;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+}
+.index_peoplenum .active svg line {
+  stroke-width: 4;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.index_peoplenum .active svg line.top {
+  -webkit-transform: translateX(-70px);
+  transform: translateX(-70px);
+}
+.index_peoplenum .active svg line.bottom {
+  -webkit-transform: translateX(70px);
+  transform: translateX(70px);
+}
+.index_peoplenum .active svg line.left {
+  -webkit-transform: translateY(70px);
+  transform: translateY(70px);
+}
+.index_peoplenum .active svg line.right {
+  -webkit-transform: translateY(-70px);
+  transform: translateY(-70px);
+}
+.num9_box {
+  width: 42.1304vw;
+  margin-left: -21.0652vw;
+}
+.runNum {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  height: 5.3vw;
+  line-height: 5.3vw;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  margin-top: -2.65vw;
+  right: 0;
+  width: 31.5625vw;
+  background: url("../images/totalpeoplenumbg.png") no-repeat;
+  background-size: 100%;
+}
+.runNum > li {
+  font-size: 3.125vw;
+  color: #fff;
+  list-style: none;
+  width: 3.49vw;
+  float: left;
+  position: absolute;
+}
+.runNum > li div {
+  color: #fff;
+}
+.num9 {
+  height: 5.3vw;
+  line-height: 5.3vw;
+  margin-top: -2.65vw;
+  width: 35.5729vw;
+  background: url("../images/totalpeoplenumbg_9.png") no-repeat;
+  background-size: 100%;
+}
+.ani_appear {
+  animation: appear 0.5s ease both;
+}
+.ani_lineani {
+  animation: lineani 2s 2.5s linear infinite both;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lineani {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+.floatlayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #001d2f;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s ease;
+}

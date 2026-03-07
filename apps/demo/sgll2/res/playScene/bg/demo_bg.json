@@ -1,0 +1,74 @@
+{
+    "version": "1.0.0.0",
+    "designWidth": 640,
+    "designHeight": 960,
+    "dataScale": 1.0,
+    "textures": [],
+    "texturesPng": ["bg-image1.jpg"],
+    "nodeTree": {
+        "options": {
+            "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+            "visible": true,
+            "frameEvent": null,
+            "name": "Node",
+            "classname": "Node"
+        },
+        "children": [
+            {
+                "options": {
+                    "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+                    "touchAble": true,
+                    "visible": true,
+                    "classType": "Panel",
+                    "width": 640.0,
+                    "height": 960.0,
+                    "sizePercentX": 1.33333337,
+                    "sizePercentY": 3.0,
+                    "actionTag": 989625932,
+                    "tag": 58,
+                    "anchorPointX": 0.0,
+                    "anchorPointY": 0.0,
+                    "name": "Panel_3",
+                    "classname": "Panel"
+                },
+                "children": [
+                    {
+                        "options": {
+                            "$type": "EditorCommon.JsonModel.Component.GUI.ImageViewSurrogate, EditorCommon",
+                            "fileNameData": {
+                                "resourceType": 0,
+                                "path": "bg-image1.jpg",
+                                "plistFile": ""
+                            },
+                            "scale9Width": 640.0,
+                            "scale9Height": 960.0,
+                            "x": 320.0,
+                            "y": 480.0,
+                            "visible": true,
+                            "classType": "ImageView",
+                            "width": 640.0,
+                            "height": 960.0,
+                            "positionPercentX": 0.5,
+                            "positionPercentY": 0.5,
+                            "sizePercentX": 0.125,
+                            "sizePercentY": 0.0833333358,
+                            "actionTag": 821833264,
+                            "tag": 83,
+                            "ignoreSize": true,
+                            "name": "ImageView_3",
+                            "classname": "ImageView"
+                        },
+                        "children": [],
+                        "classname": "ImageView"
+                    }
+                ],
+                "classname": "Panel"
+            }
+        ],
+        "classname": "Node"
+    },
+    "action": {
+        "speed": 1.0,
+        "timelines": []
+    }
+}

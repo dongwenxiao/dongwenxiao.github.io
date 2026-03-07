@@ -1,0 +1,30 @@
+{
+    "debugMode": 0,
+    "frameRate": 60,
+    "id": "gameCanvas",
+    "renderMode": 0,
+    "showFPS": true,
+    "jsList": [
+        "src/towers.js",
+        "src/res/r.js",
+        "src/lib/extends.js",
+        "src/model/base/Bullet.js",
+        "src/model/base/Enemy.js",
+        "src/model/base/Prop.js",
+        "src/model/base/Tower.js",
+        "src/model/bullet/DecelerateBullet.js",
+        "src/model/bullet/BombBullet.js",
+        "src/model/tower/EffectTower.js",
+        "src/model/tower/BombTower.js",
+        "src/controller/Scene.js",
+        "src/scene/fighting/Scene.js",
+        "src/scene/fighting/BackgroundLayer.js",
+        "src/scene/fighting/LayoutLayer.js",
+        "src/scene/fighting/AnimationLayer.js",
+        "src/scene/fighting/InfoLayer.js",
+        "src/scene/fighting/ControlLayer.js",
+        "src/scene/fighting/MenuLayer.js",
+        "src/scene/map/Scene.js",
+        "src/component/Button.js"
+    ]
+}
