@@ -1,0 +1,25 @@
+{
+    "debugMode": 0,
+    "frameRate": 60,
+    "id": "gameCanvas",
+    "renderMode": 0,
+    "showFPS": true,
+    "jsList": [
+        "app/lib/MathExtension.js",
+        "app/Resource.js",
+        "app/component/Profile.js",
+        "app/component/Broadcast.js",
+        "app/component/Process.js",
+        "app/component/HeadBox.js",
+        "app/component/TableView.js",
+        "app/component/LightBox.js",
+        "app/component/CircleTableView.js",
+        "app/component/BottomNav.js",
+        "app/component/Button.js",
+        "app/component/Button.js",
+        "app/BackgroundLayer.js",
+        "app/ControlLayer.js",
+        "app/StatisticsScene.js",
+        "app/MainScene.js"
+    ]
+}

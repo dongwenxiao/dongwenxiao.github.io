@@ -1,0 +1,121 @@
+/* config */
+:root {
+  --header-height: 6.4rem;
+  --menu-width: 20rem;
+  --mask-opcity: 50%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  font-size: 10px;
+  font-family: Roboto, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, NotoSans-Regular, NotoSans,
+    Nimbus Sans L, Arial, Lucida Grande, sans-serif, caption;
+
+  -webkit-touch-callout: none; /* 用于控制当用户长按一个元素时，是否显示系统默认的菜单（例如复制、分享等） */
+  -webkit-text-size-adjust: none; /* 用于控制当用户旋转屏幕或更改浏览器设置时，文本的大小是否自动调整 */
+  /* -webkit-tap-highlight-color: rgb(234, 234, 234); */ /* 用于控制当用户点击一个元素时，该元素的高亮颜色 */
+  -webkit-user-select: none; /* 用于控制用户是否可以选择元素中的文本 */
+  user-select: none;
+}
+
+.container {
+  background-color: rgb(255, 255, 169);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.header {
+  background-color: rgb(131, 131, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  text-align: center;
+  z-index: 30;
+}
+
+.main {
+  background-color: rgb(255, 255, 255);
+  flex: 1;
+  overflow-y: scroll;
+  align-items: center;
+  margin-top: var(--header-height);
+  /* overscroll-behavior: none; */
+}
+
+.card {
+  margin: 20px auto;
+  background-color: rgb(228, 228, 228);
+  width: 80%;
+  height: 400px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 2rem;
+}
+#menu-switch-checkbox {
+  display: none;
+}
+#menu-switch-checkbox:checked ~ .menu {
+  transform: translateX(0);
+}
+#menu-switch-checkbox:checked ~ .mask {
+  display: block;
+}
+.menu-btn {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 50px;
+  height: 39px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABOCAYAAADW1bMEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAydpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjAxRTk5RTZCQjlDMTFFN0E2MjFDRjY5MjJENTkyQ0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjAxRTk5RTVCQjlDMTFFN0E2MjFDRjY5MjJENTkyQ0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgSWxsdXN0cmF0b3IgQ0MgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0idXVpZDphYjE3YjBjNy0wZjY5LTkyNGMtODYyMC1hOGYyNWRhYjJkN2YiIHN0UmVmOmRvY3VtZW50SUQ9InV1aWQ6NmM3YmQ0Y2EtZDA4Ny1kMzRkLWE3ZWQtMzkwNDY0NzJkMDU0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lLWabgAAAnZJREFUeNrsnU+IjHEch38z9sCmlIgQ4SIHcdGWnFwUcpAiHLTlKGpJOXCQi38HWw7ERaGkLXJwFDZK7YmDGdRKbNGWoq214/PZed+apnV85/c9PE897c7Onj5P7+7Ou/PO1BrNZirol2fkYblCTsuZBFVQl33ym7wnL8pfvqNWBNkoX8lFbJWF33KbHHOphfIZMbLSXzRY7CAn5Uo2yc5SOeQge9kiDLscZD07hGGNg0yxQximHOQNO4Rh9q+s2+wQhjsOMiLvskV2Hsr79eLGEXmNTbJxQ+7vfKReslYekKvk38Spk6rwgTBPfpUPZKO8ozsIBCgFBAGCEAQIQhAgCEGAIAQBggBBCAIEIQgQhCBAEIJACPrm+JqfWrou8SSHKqkV23+WH/4XZKu8KTexV095J4/Jl50/sg7K18TIgi+WeiGPzh46jWZzgz6+Z5cQbPYRcpwdwnDCQXawQxi2O8gydgjDEgf5wQ5hmHSQ5+wQhlEHGWaHMAw7yFv+0grBaT84LB8YXpd75AS79Bz/Dt8nL/lG56mTJ3K5HEjtc1kziXNZVVFesPPJvzc6d+4+udgqvmGUzfKVAoIAQQgCBCEIEIQgQBCCAEGAIAQBghAECEIQIAhBIATd/1P3G7n45UpXJy7YqfpA8JMcvqT26/WOzxXkgjzLVj3nqrwsT3X+yLpFjKwMpeLVxX2E7JaDbJKdQ3KkToxQDDrIADuEYYuDLGCHMMx3kI/sEIZxB3nMDmF46iB+35DvbJGdSXmlXnyyU/5hk2xMFw0mykfqY6l9bci51D514jc55NRJdZSnTnyxziN5Xv70HbVWq8U8gfgnwACpb2jMHHwaLQAAAABJRU5ErkJggg==);
+  background-size: 60%;
+}
+.menu {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--menu-width);
+  height: 100%;
+  background-color: rgb(131, 131, 255);
+  padding-top: var(--header-height);
+  z-index: 20;
+  transition: transform 0.2s cubic-bezier(0, 0, 0.2, 1) 0ms;
+  transform: translateX(calc(0em - var(--menu-width)));
+}
+.menu ul,
+.menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 70%;
+  background-color: aliceblue;
+  font-size: 1.6rem;
+}
+
+.mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgb(0 0 0 / var(--mask-opcity));
+}

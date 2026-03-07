@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "hexo server",
-    "auto": "yarn clean && yarn generate && cp -r ./apps ./public/apps && yarn deploy",
+    "auto": "yarn clean && yarn generate && cp -r ./apps/. ./public/apps && yarn deploy",
     "deploy": "node ./tools/deploy.js",
     "generate": "hexo generate",
     "clean": "node ./tools/clean.js",

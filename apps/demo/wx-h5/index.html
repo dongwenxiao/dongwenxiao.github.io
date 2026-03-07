@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>WeChat H5</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="header">
+        <label for="menu-switch-checkbox" class="menu-btn"></label>
+        <div class="logo">Logo</div>
+      </div>
+
+      <input type="checkbox" id="menu-switch-checkbox" />
+      <label class="mask" for="menu-switch-checkbox"></label>
+      <div class="menu">
+        <ul>
+          <li>Link 1</li>
+          <li>Link 2</li>
+          <li>Link 3</li>
+        </ul>
+      </div>
+
+      <div class="main" id="main">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  if (document.location.href.includes('no-scroll-feel')) {
+    // 无滚动条滚动过渡效果
+    document.getElementById('container').style.height = '100vh';
+    document.getElementById('main').style.overscrollBehavior = 'none';
+  }
+
+  // 禁用双指放大
+  document.documentElement.addEventListener(
+    'touchstart',
+    function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    },
+    false
+  );
+
+  // 禁用双击放大
+  var lastTouchEnd = 0;
+  document.documentElement.addEventListener(
+    'touchend',
+    function (event) {
+      var now = new Date().getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    },
+    false
+  );
+</script>

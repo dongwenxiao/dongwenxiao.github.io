@@ -1,0 +1,37 @@
+
+动画命名规范
+---------------------------------------------------------------------
+项目名：
+
+每个人物名，即动画项目名   类型首字母+下划线+名字全拼  
+例如：将 关羽的动画   j_guangyu  
+         将 曹操的动画   j_caocao
+         天地无用的技能动画  jn_tiandiwuyong
+         宝物孙子兵法动画  bw_sunzibingfa
+
+
+动画名：
+
+站立 standing
+跑前 run_before
+跑    run
+攻击 attack
+被打 beaten
+死亡 death
+
+
+热更新文档
+---------------------------------------------------------------------
+官方介绍：
+https://github.com/chukong/cocos-docs/blob/master/manual/framework/html5/v3/assets-manager/zh.md
+
+packageUrl : 远程资源的下载根路径。
+remoteVersionUrl : 远程版本文件的路径，用来判断服务器端是否有新版本的资源。
+remoteManifestUrl : 远程配置文件的路径，包含版本信息以及所有资源信息。
+version : 配置文件对应的版本。
+engineVersion : 配置文件对应的引擎版本。
+assets : 所有资源信息。
+key : 键代表资源的相对路径（相对于packageUrl）。
+md5 : md5值代表资源文件的版本信息。
+compressed : [可选项] 如果值为true，文件被下载后会自动被解压，目前仅支持zip压缩格式。
+searchPaths : 需要添加到cocos2d引擎中的搜索路径列表。

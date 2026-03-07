@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>豹小秘</title>
+    <style>
+      .appear {
+        animation: appear 0.3s ease both;
+      }
+
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link href="css/main_bundle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main-wrap">
+      <canvas id="myCanvas" width="500" height="250"></canvas>
+      <div id="tags"></div>
+      <canvas id="app" width="1920" height="1080"></canvas>
+    </div>
+    <div class="index_peoplenum ani_appear clearfix">
+      <div class="box">
+        <div class="boxline ani_lineani"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <line class="top" x1="0" y1="0" x2="170" y2="0" />
+          <line class="left" x1="0" y1="100" x2="0" y2="-70" />
+          <line class="bottom" x1="100" y1="100" x2="-70" y2="100" />
+          <line class="right" x1="100" y1="0" x2="100" y2="170" />
+        </svg>
+        <img src="images/totalpeoplehead.png" alt="" />
+      </div>
+
+      <ul class="runNum" id="test"></ul>
+    </div>
+    <div class="floatlayer"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/lib/easeljs-0.8.1.min.js"></script>
+    <script src="js/lib/tweenjs-0.6.1.min.js"></script>
+    <script src="js/lib/movieclip-0.8.1.min.js"></script>
+    <script src="js/lib/preloadjs-0.6.1.min.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/tagcanvas.min.js"></script>
+
+    <script type="text/javascript" src="js/main-bundle.js"></script>
+  </body>
+</html>

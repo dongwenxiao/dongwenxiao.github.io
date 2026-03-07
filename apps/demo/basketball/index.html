@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Websage Basketball</title>
+        <meta charset="utf-8" />
+        <script
+            type="text/javascript"
+            src="./engine/cocos2d-js-v3.8.js"
+            charset="UTF-8"
+        ></script>
+    </head>
+
+    <body>
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        <script type="text/javascript">
+            window.onload = function() {
+                cc.game.onStart = function() {
+                    // screen adapter
+                    cc.view.adjustViewPort(true);
+                    cc.view.setDesignResolutionSize(
+                        800,
+                        450,
+                        cc.ResolutionPolicy.SHOW_ALL
+                    );
+                    cc.view.resizeWithBrowserSize(true);
+
+                    //load resources
+                    cc.LoaderScene.preload(
+                        g_resources,
+                        function() {
+                            codemonkey.game.basketball.init();
+
+                            // var MyScene = cc.Scene.extend({
+                            //     onEnter: function() {
+                            //         this._super();
+                            //         var size = cc.director.getWinSize();
+                            //         var sprite = cc.Sprite.create(g_resSheet.FirstScene.img_hello_png);
+                            //         sprite.setPosition(size.width / 2, size.height / 2);
+                            //         sprite.setScale(0.8);
+                            //         this.addChild(sprite, 0);
+
+                            //         var label = cc.LabelTTF.create("Hello World", "Arial", 40);
+                            //         label.setPosition(size.width / 2, size.height / 2);
+                            //         this.addChild(label, 1);
+                            //     }
+                            // });
+                            // cc.director.runScene(new MyScene());
+                        },
+                        this
+                    );
+                };
+                cc.game.run('gameCanvas');
+            };
+        </script>
+    </body>
+</html>

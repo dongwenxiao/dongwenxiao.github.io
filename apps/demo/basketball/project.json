@@ -1,0 +1,14 @@
+{
+    "debugMode": 0,
+    "showFPS": false,
+    "frameRate": 60,
+    "id": "gameCanvas",
+    "renderMode": 0,
+    "jsList": [
+        "src/res.js",
+        "src/contract.js",
+        "src/game.js",
+        "src/Basketball.js",
+        "src/GameScene.js"
+    ]
+}
