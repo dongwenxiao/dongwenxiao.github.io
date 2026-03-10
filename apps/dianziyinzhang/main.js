@@ -1,5 +1,6 @@
 // Output version to console
-console.log(`version v${__APP_VERSION__}`);
+const appVersion = typeof __APP_VERSION__ !== "undefined" ? __APP_VERSION__ : "dev";
+console.log(`version v${appVersion}`);
 
 const canvas = document.getElementById("sealCanvas");
 const ctx = canvas.getContext("2d");
@@ -74,7 +75,7 @@ console.info(
 
 const pickScrambledFont = () =>
   licenseGuard.scrambledFonts[
-    Math.floor(Math.random() * licenseGuard.scrambledFonts.length)
+  Math.floor(Math.random() * licenseGuard.scrambledFonts.length)
   ] || "serif";
 
 // Configuration State
